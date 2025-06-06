@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python_Banner.png" alt="Python in 100 Days Banner" width="1200" height="600"/>
-</p>
 
 # 👨‍💻 Python in 100 Days – Course Hub
 
