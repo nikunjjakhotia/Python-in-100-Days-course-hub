@@ -34,7 +34,7 @@ This is a free, beginner-friendly learning journey to help you build a solid fou
 
 ## 🔒 License
 
-This course is offered under [Creative Commons Attribution-NonCommercial 4.0](LICENSE.md).  
+This course is offered under [Creative Commons Attribution-NonCommercial 4.0](license.md).  
 Feel free to learn and share — but **not for commercial use**.
 
 ---
