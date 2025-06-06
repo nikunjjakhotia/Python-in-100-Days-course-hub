@@ -49,6 +49,7 @@ Python is a powerful, high-level programming language known for its:
 Let’s write the legendary “Hello, World!” program.
 
 Open any text editor or IDE (VS Code, Notepad++, PyCharm, etc.)
+[Notepad++](https://notepad-plus-plus.org/downloads/v8.8.1/)
 
 Create a new file named hello.py
 Type this code:
