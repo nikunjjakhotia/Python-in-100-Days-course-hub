@@ -108,3 +108,8 @@ We recommend using PyCharm, a beginner-friendly IDE for writing Python code. Fol
 Use Tab instead of spaces for indentation.
 Use Ctrl + / (or Cmd + / on Mac) to comment/uncomment lines.
 Explore the interface — you'll get comfortable quickly.
+
+
+---
+➡️ [Next: Course Contents](/CourseContents.md)
+⬅️ [Back: Home](/index.md)
