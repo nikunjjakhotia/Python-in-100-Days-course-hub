@@ -103,3 +103,8 @@ We recommend using PyCharm, a beginner-friendly IDE for writing Python code. Fol
 
 👉 Setup PyCharm Guide
 [Pycharm Installation](Pycharm/pycharm.md)
+
+💡 Tips
+Use Tab instead of spaces for indentation.
+Use Ctrl + / (or Cmd + / on Mac) to comment/uncomment lines.
+Explore the interface — you'll get comfortable quickly.
