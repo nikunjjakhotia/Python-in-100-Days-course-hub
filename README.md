@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python in 100 Days Banner.png" alt="Python in 100 Days Banner" />
+</p>
+
 # 🐍 Python in 100 Days – Text-Based Course
 
 Welcome to the **Python in 100 Days** challenge — a structured, beginner-friendly course designed to help you learn Python step by step using exercises, quizzes, and projects. This course is hosted on **LinkedIn** and guided by [Nikunj Jakhotia](https://www.linkedin.com/in/nikunjjakhotia/).
