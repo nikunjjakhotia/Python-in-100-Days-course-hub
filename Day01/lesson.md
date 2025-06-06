@@ -101,3 +101,4 @@ In Day 2, we’ll cover:
 We recommend using PyCharm, a beginner-friendly IDE for writing Python code. Follow the instructions here to get started:
 
 👉 Setup PyCharm Guide
+[Pycharm Installation](Pycharm/pycharm.md)
