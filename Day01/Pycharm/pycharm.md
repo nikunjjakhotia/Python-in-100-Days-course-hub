@@ -45,7 +45,7 @@ PyCharm is a popular and beginner-friendly **Integrated Development Environment 
 print("Hello from PyCharm!")
 
 Right-click on the file and click Run 'hello'
-[Pycharm Screenshot 1](https://github.com/user-attachments/assets/84515e25-f1ab-468c-86bf-712aa3090ea5)
-[Pycharm Screenshot 2](https://github.com/user-attachments/assets/2b0e7248-9432-4427-b848-8a043bfbedd3)
+https://github.com/user-attachments/assets/84515e25-f1ab-468c-86bf-712aa3090ea5
+https://github.com/user-attachments/assets/2b0e7248-9432-4427-b848-8a043bfbedd3
 
 🎉 You're now set up and ready to code with PyCharm!
