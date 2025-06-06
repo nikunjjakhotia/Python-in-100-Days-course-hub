@@ -56,3 +56,5 @@ This course is my initiative to give back to the community by making structured,
 
 - 📋 [Register for the course](https://forms.gle/7WsiAnV7CX6vTk1KA)
 - 💼 [My LinkedIn Profile](https://www.linkedin.com/in/nikunjjakhotia/)
+
+This course is open for learning only. Redistribution or duplication without attribution is discouraged. For non-commercial use only.
