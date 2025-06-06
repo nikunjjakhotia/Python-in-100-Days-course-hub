@@ -26,6 +26,11 @@ PyCharm is a popular and beginner-friendly **Integrated Development Environment 
 - Select a location and name it something like `python_day1`
 - Make sure **"New environment using Virtualenv"** is selected
 - Confirm that Python is selected as the base interpreter (it should auto-detect)
+![image](https://github.com/user-attachments/assets/b4d27aac-1080-45af-8919-9e1bdc527b5c)
+![image](https://github.com/user-attachments/assets/8a667b9d-b64f-49c4-9d65-2c670b50a7fd)
+![image](https://github.com/user-attachments/assets/556d34a8-2cf8-4628-ab96-65eeb9c02976)
+
+
 
 > ❗ If Python is not detected, install it from [python.org](https://www.python.org/downloads/) first.
 
@@ -34,10 +39,14 @@ PyCharm is a popular and beginner-friendly **Integrated Development Environment 
 - Right-click the project > **New → Python File**
 - Name it `hello.py`
 - Paste your code:
+![image](https://github.com/user-attachments/assets/95ab0f93-147e-406a-8caf-d158337e2dec)
 
 ```python
 print("Hello from PyCharm!")
 
 Right-click on the file and click Run 'hello'
+![image](https://github.com/user-attachments/assets/78aab8b3-f880-43f6-8d8d-53375a6059f1)
+![image](https://github.com/user-attachments/assets/6d4440ec-dc60-4edb-a9e7-f02143ed9750)
+
 
 🎉 You're now set up and ready to code with PyCharm!
