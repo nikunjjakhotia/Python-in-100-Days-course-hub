@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python in 100 Days Banner.png" alt="Python in 100 Days Banner" width="400" height"200/>
+  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python in 100 Days Banner.png" alt="Python in 100 Days Banner" width="400" height="100"/>
 </p>
 
 # 🐍 Python in 100 Days – Text-Based Course
