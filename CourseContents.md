@@ -8,7 +8,7 @@ Welcome to the **Python in 100 Days** journey! This is your master roadmap. Each
 
 | Day | Topic                             | Link                            |
 |-----|-----------------------------------|---------------------------------|
-| 1   | Hello, Python! + Print Statements | [Day 1 - Introduction](lessons/day1.md) |
+| 1   | Hello, Python! + Print Statements | [Day 1 - Introduction](Day01/lessons.md) |
 | 2   | Comments, Variables & Data Types  | *Coming soon*                  |
 | 3   | Numbers, Strings & Input          | *Coming soon*                  |
 | 4   | Lists & Indexing                  | *Coming soon*                  |
