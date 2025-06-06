@@ -1,9 +1,3 @@
-
----
-
-### 🧰 New File: `pycharm.md`
-
-```markdown
 # Setting Up PyCharm for Python
 
 ## 🧑‍💻 What is PyCharm?
