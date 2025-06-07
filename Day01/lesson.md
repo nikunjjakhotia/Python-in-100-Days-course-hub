@@ -111,8 +111,8 @@ Explore the interface — you'll get comfortable quickly.
 
 
 ---
-🧠 [Exercise](/Day01/exercise.md)
+🧠 [Exercise](./exercise.md)
 
-➡️ [Next: Course Contents](/CourseContents.md)
+➡️ [Next: Course Contents](../CourseContents.md)
 
-⬅️ [Back: Home](/index.md)
+⬅️ [Back: Home](../index.md)
