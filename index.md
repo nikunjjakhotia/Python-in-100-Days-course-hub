@@ -1,6 +1,10 @@
 
 # 👨‍💻 Python in 100 Days – Course Hub
 
+<p align="center">
+  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python_Banner.png" alt="Python in 100 Days Banner" width="1200" height="400"/>
+</p>
+
 Welcome to the **Python in 100 Days** course!  
 This is a free, beginner-friendly learning journey to help you build a solid foundation in Python — from basics to real-world applications.
 
