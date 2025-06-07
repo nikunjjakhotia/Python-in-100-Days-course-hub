@@ -2,7 +2,7 @@
 # 👨‍💻 Python in 100 Days – Course Hub
 
 <p align="center">
-  <img src="https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/assets/Python_Banner.png" alt="Python in 100 Days Banner" width="1200" height="400"/>
+  <img src="https://raw.githubusercontent.com/nikunjjakhotia/Python-in-100-Days-course-hub/main/assets/Python_Banner.png" alt="Python in 100 Days Banner" width="1200" height="400"/>
 </p>
 
 Welcome to the **Python in 100 Days** course!  
