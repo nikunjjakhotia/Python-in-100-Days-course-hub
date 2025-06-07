@@ -1,5 +1,5 @@
 
-# 📘 Day 01: Python Basics & Your First Program
+# 📘 Exercise Day 01: Python Basics & Your First Program
 
 ---
 
