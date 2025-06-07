@@ -46,7 +46,8 @@ print("Hello from PyCharm!")
 
 Right-click on the file and click Run 'hello'
 
-- [Screenshot1](../assets/runhello.png)
-- [Screenshot2](../assets/runhelloop.png)
+[Screenshot1](../assets/runhello.png)
+
+[Screenshot2](../assets/runhelloop.png)
 
 🎉 You're now set up and ready to code with PyCharm!
