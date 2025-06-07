@@ -78,6 +78,4 @@ print(type(42))        # <class 'int'>
 # Print them in 3 separate lines
 ```
 
----
-
 👉 Next: [Day03 → Numbers, Strings & Input](#)
