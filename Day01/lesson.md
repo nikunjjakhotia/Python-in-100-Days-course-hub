@@ -113,6 +113,8 @@ Explore the interface — you'll get comfortable quickly.
 ---
 🧠 [Exercise](/Day01/exercise.md)
 
-➡️ [Next: Course Contents](/CourseContents.md)
+➡️ [Course Contents](/CourseContents.md)
 
-⬅️ [Back: Home](/index.md)
+⬅️ [Home](/index.md)
+
+👉 Next: [Day02 → Comments, Variables & Data Types](/Day02/lesson.md)
