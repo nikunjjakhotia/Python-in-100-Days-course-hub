@@ -46,12 +46,9 @@ print("Hello from PyCharm!")
 
 ### Right-click on the file and click Run 'hello'
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nikunjjakhotia/Python-in-100-Days-course-hub/main/assets/runhello.png"/>
-</p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nikunjjakhotia/Python-in-100-Days-course-hub/main/assets/runhelloop.png"/>
-</p>
+![Run Hello](../../assets/runhello.png)
+
+![Run Output](../../assets/runhelloop.png)
 
 🎉 You're now set up and ready to code with PyCharm!
