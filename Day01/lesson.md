@@ -61,7 +61,7 @@ Open CMD -> Make sure you navigate to the path where your file has been saved.
 
 python hello.py
 
-![Run Output](../../assets/cmdprompt.png)
+![CMD Output](../../assets/cmdprompt.png)
 
 🎉 You just ran your first Python program!
 
