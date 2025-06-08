@@ -75,9 +75,13 @@ print(type(42))        # <class 'int'>
 
 ## ✅ Practice it Yourself
 
-```python
-# Define your name, age, and whether you're learning Python
-# Print them in 3 separate lines
-```
+📚 Assignment
 
-👉 Next: [Day03 → Numbers, Strings & Input](#)
+🧠 [Exercise](./exercise.md)
+
+
+
+
+➡️ [Next: Course Contents](../CourseContents.md)
+
+⬅️ [Back: Home](../index.md)
