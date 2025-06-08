@@ -75,5 +75,8 @@ Once done, save your file as `day02_exercise.py` and push it to your GitHub repo
 
 ---
 
-🡈 [Back: Lesson](lesson.md)  
-➡️ [Next: Day 03](../Day03/lesson.md)
+🧠 [Back to Lesson](./lesson.md)
+
+➡️ [Next: Course Contents](../CourseContents.md)
+
+⬅️ [Home](../index.md)
