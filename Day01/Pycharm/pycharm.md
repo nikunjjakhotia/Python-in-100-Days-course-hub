@@ -46,12 +46,8 @@ print("Hello from PyCharm!")
 
 ### Right-click on the file and click Run 'hello'
 
-<p align="center">
-  <img src="../assets/runhello.png" alt="Run Hello" width="700"/>
-</p>
+![Run Hello](../../assets/runhello.png)
 
-<p align="center">
-  <img src="../assets/runhelloop.png" alt="Run Output" width="700"/>
-</p>
+![Run Output](../../assets/runhelloop.png)
 
 🎉 You're now set up and ready to code with PyCharm!
