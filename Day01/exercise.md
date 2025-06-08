@@ -63,3 +63,9 @@ Hobby: Reading 📚
 If you're following along on GitHub, you can:
 - Save this as `day01_assignment.py` and upload it to your personal repo.
 - Or share your output in comments on the LinkedIn post for Day 1!
+
+🧠 [Back to Lesson](../lesson.md)
+
+➡️ [Next: Course Contents](../CourseContents.md)
+
+⬅️ [Home](../index.md)
