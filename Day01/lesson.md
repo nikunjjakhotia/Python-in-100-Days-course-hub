@@ -61,7 +61,8 @@ Save the file, then run it from terminal:
 Open CMD -> Make sure you navigate to the path where your file has been saved. 
 
 python hello.py
-![image](https://github.com/user-attachments/assets/efebe415-28f0-422a-816a-7b6e2f8b4bee)
+![image](https://github.com/user-attachments/assets/9428b0c4-a0c4-481d-977c-3f60f327f1c9)
+
 
 🎉 You just ran your first Python program!
 
