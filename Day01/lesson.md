@@ -43,8 +43,9 @@ Python is a powerful, high-level programming language known for its:
 
    You should see something like:
    Python 3.x.x
-   ![image](https://github.com/user-attachments/assets/ec99a71c-47b0-4612-98b8-83d97c64aea5)
-
+   
+   ![image](https://github.com/user-attachments/assets/015f30b7-7d7a-4029-9cee-66ad0685b6f0)
+   
 ✏️ Your First Python Program
 Let’s write the legendary “Hello, World!” program.
 
@@ -55,14 +56,11 @@ Create a new file named hello.py
 Type this code:
 print("Hello, World!")
 
-![image](https://github.com/user-attachments/assets/015f30b7-7d7a-4029-9cee-66ad0685b6f0)
-
 Save the file, then run it from terminal:
 Open CMD -> Make sure you navigate to the path where your file has been saved. 
 
 python hello.py
 ![image](https://github.com/user-attachments/assets/9428b0c4-a0c4-481d-977c-3f60f327f1c9)
-
 
 🎉 You just ran your first Python program!
 
