@@ -12,8 +12,8 @@ Welcome to the **Python in 100 Days** journey! This is your master roadmap. Each
 
 | Day | Topic                             | Link                            |
 |-----|-----------------------------------|---------------------------------|
-| 1   | Hello, Python! + Print Statements | [Day 1 - Introduction](Day01/lesson.md) |
-| 2   | Comments, Variables & Data Types  | *Coming soon*                  |
+| 1   | Hello, Python! + Print Statements | [Day 1](Day01/lesson.md)       |
+| 2   | Comments, Variables & Data Types  | [Day 2](Day02/lesson.md)       |
 | 3   | Numbers, Strings & Input          | *Coming soon*                  |
 | 4   | Lists & Indexing                  | *Coming soon*                  |
 | 5   | Tuples, Sets, and Dictionaries    | *Coming soon*                  |
