@@ -73,19 +73,7 @@ python hello.py
 
 📚 Assignment
 
-1. Write a program that prints your name:
-print("My name is Nikunj")
-
-2. Write 3 more print() statements of your choice. Example:
-- print("I love coding!")
-- print("Python is fun.")
-- print("Let’s do this 💪")
-
-3. Bonus: Try using print() with different types:
-- print(5)                # integer
-- print(3.14)             # float
-- print("Learning")       # string
-- print(True)             # boolean
+🧠 [Exercise](./exercise.md)
 
 ✅ What’s Next?
 In Day 2, we’ll cover:
