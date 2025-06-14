@@ -72,6 +72,12 @@ print("Sum:", a + b)
 
 ---
 
-## 🧠 [Exercise →](exercise.md)
+## ✅ Practice it Yourself
 
-⬅️ [Back to Course Contents](../CourseContents.md)
+📚 Assignment
+
+🧠 [Exercise](./exercise.md)
+
+➡️ [Next: Course Contents](../CourseContents.md)
+
+⬅️ [Back: Home](../index.md)
