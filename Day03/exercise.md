@@ -54,5 +54,8 @@ Save your file as `day03_exercise.py` and keep it organized in your project fold
 
 ---
 
-⬅️ [Back to Lesson](lesson.md)  
-➡️ [Next: Day 04](../Day04/lesson.md)
+🧠 [Back to Lesson](./lesson.md)
+
+➡️ [Next: Course Contents](../CourseContents.md)
+
+⬅️ [Home](../index.md)
