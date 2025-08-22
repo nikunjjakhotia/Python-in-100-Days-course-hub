@@ -1,79 +1,141 @@
 import os
 import argparse
-from datetime import datetime
 
-# Regions, submissions and their log paths
-CONFIG = {
-    "AUD": {
-        "Index":       "ICEDIRECT/Index/AUDforUS/PriceGeneration_AUDforUS_{}.log",
-        "SingleName":  "ICEDIRECT/SingleName/AUDforUS/PriceGeneration_AUDforUS_{}.log",
-    },
-    "SGD": {
-        "Index":       "ICEDIRECT/Index/SGDforUS/PriceGeneration_SGDforUS_{}.log",
-        "SingleName":  "ICEDIRECT/SingleName/SGDforUS/PriceGeneration_SGDforUS_{}.log",
-    },
-    "EUR": {
-        "Index":       "ICEDIRECT/Index/EURforUS/PriceGeneration_EURforUS_{}.log",
-        "SingleName":  "ICEDIRECT/SingleName/EURforUS/PriceGeneration_EURforUS_{}.log",
-        "IndexOption": "ICEDIRECT/IndexOption/EURforUS/PriceGeneration_EURforUS_{}.log",
-    },
-    "USD": {
-        "Index":       "ICEDIRECT/Index/USD/PriceGeneration_USD_{}.log",
-        "SingleName":  "ICEDIRECT/SingleName/USD/PriceGeneration_USD_{}.log",
-        "IndexOption": "ICEDIRECT/IndexOption/USD/PriceGeneration_USD_{}.log",
-    },
+# --- Config ---
+# UNC base to NAS (do not change slashes here; we’ll join parts below)
+NAS_BASE = r"\\lonshr-emlogmgmt\CIBFIEMCRET_LOGS\vol2\fixlink\ws9100ppc00462"
+
+# Regions and which product folders they have
+REGIONS = {
+    "AUD": {"folder": "AUDforUS", "products": ["Index", "SingleName"]},
+    "SGD": {"folder": "SGDforUS", "products": ["Index", "SingleName"]},
+    "EUR": {"folder": "EURforUS", "products": ["Index", "SingleName", "IndexOption"]},
+    "USD": {"folder": "USD",      "products": ["Index", "SingleName", "IndexOption"]},
 }
 
-SLOTS = ["EarlyRun", "Late1", "Late2", "Submission"]
+# Internal slot keys (avoid key collision with "Submission" column)
+SLOT_KEYS = ("SLOT_MORNING", "SLOT_LATE1", "SLOT_LATE2", "SLOT_FINAL")
+# Display names for Outlook/email (always show local names)
+SLOT_HEADERS = (
+    "Early run (10am)",
+    "Latest run #1 (4pm)",
+    "Latest run #2 (4:15pm)",
+    "Submission (4:30pm)",
+)
 
-BASE_NAS = r"\\lonshr-emlogmgmt\CIBFIEMCRET_LOGS\vol2\fixlink\ws9100ppc00462"
+# Status -> background color (inline CSS for Outlook)
+COLOR_MAP = {
+    "OK":  "#c6efce",  # light green
+    "NOK": "#ffc7ce",  # light red/amber
+    "TBC": "#fff2cc",  # light yellow
+    "HOLIDAY": "#d9d9d9",  # grey
+}
 
-def build_status_table(date_str):
-    table = []
-    for region, submissions in CONFIG.items():
-        for submission, path_pattern in submissions.items():
-            row = {"Region": region, "Submission": submission}
-            for slot in SLOTS:
-                log_path = os.path.join(BASE_NAS, date_str, path_pattern.format(slot))
-                if os.path.exists(log_path):   # server check
-                    status = "TBC"  # placeholder until parser is added
-                else:
-                    status = "TBC"
-                row[slot] = (status, log_path)
-            table.append(row)
-    return table
+def nas_log_path(date_str: str, product: str, region_folder: str, slot_key: str) -> str:
+    """
+    Build the NAS UNC path for the log file to hyperlink in the 'Submission' column.
+    As per your requirement, this always points to the EarlyRun log.
+    """
+    # product folder name is exactly the product (Index / SingleName / IndexOption)
+    # file name is always PriceGeneration_<RegionFolder>_EarlyRun.log
+    fname = f"PriceGeneration_{region_folder}_EarlyRun.log"
+    # Use os.path.join to keep backslashes consistent on Windows UNC
+    return os.path.join(NAS_BASE, date_str, "ICEDIRECT", product, region_folder, fname)
 
-def print_text(table):
-    header = f"{'Region':<6} | {'Submission':<22} | " + " | ".join([f"{slot:<10}" for slot in SLOTS])
+def build_rows(date_str: str):
+    """
+    Build the table rows. Each row has:
+      - Region (AUD/SGD/EUR/USD)
+      - SubmissionTitle (e.g., 'AUDforUS - Index')
+      - SubmissionLink (UNC path to EarlyRun log)
+      - Four slot statuses: default to TBC (we’ll wire parsers later)
+    """
+    rows = []
+    for region, cfg in REGIONS.items():
+        region_folder = cfg["folder"]
+        for product in cfg["products"]:
+            submission_title = f"{region_folder} - {product}"
+            link_path = nas_log_path(date_str, product, region_folder, "SLOT_MORNING")  # always EarlyRun in hyperlink
+
+            row = {
+                "Region": region,
+                "SubmissionTitle": submission_title,
+                "SubmissionLink": link_path,
+                # default statuses; parsers will set OK/NOK later
+                "SLOT_MORNING":  "TBC",
+                "SLOT_LATE1":    "TBC",
+                "SLOT_LATE2":    "TBC",
+                "SLOT_FINAL":    "TBC",
+            }
+            rows.append(row)
+    return rows
+
+def print_text(rows):
+    # widths
+    w_region = 6
+    w_subm = 28
+    w_slot = 14
+
+    header = (
+        f"{'Region':<{w_region}} | "
+        f"{'Submission':<{w_subm}} | "
+        f"{SLOT_HEADERS[0]:<{w_slot}} | "
+        f"{SLOT_HEADERS[1]:<{w_slot}} | "
+        f"{SLOT_HEADERS[2]:<{w_slot}} | "
+        f"{SLOT_HEADERS[3]:<{w_slot}}"
+    )
     print(header)
     print("-" * len(header))
-    for row in table:
-        slots = " | ".join([f"{row[slot][0]:<10}" for slot in SLOTS])
-        print(f"{row['Region']:<6} | {row['Submission']:<22} | {slots}")
+    for r in rows:
+        print(
+            f"{r['Region']:<{w_region}} | "
+            f"{r['SubmissionTitle']:<{w_subm}} | "
+            f"{r['SLOT_MORNING']:<{w_slot}} | "
+            f"{r['SLOT_LATE1']:<{w_slot}} | "
+            f"{r['SLOT_LATE2']:<{w_slot}} | "
+            f"{r['SLOT_FINAL']:<{w_slot}}"
+        )
 
-def print_html(table):
-    print("<table border='1' cellspacing='0' cellpadding='4' style='border-collapse:collapse;font-family:Calibri;font-size:12px;'>")
-    print("<tr style='background-color:#f2f2f2;'><th>Region</th><th>Submission</th>" + "".join([f"<th>{slot}</th>" for slot in SLOTS]) + "</tr>")
-    for row in table:
+def print_html(rows):
+    # simple, Outlook-friendly inline styles
+    print("<table border='1' cellspacing='0' cellpadding='4' "
+          "style='border-collapse:collapse;font-family:Calibri;font-size:12px;'>")
+    # Header
+    print("<tr style='background-color:#f2f2f2;'>"
+          "<th>Region</th>"
+          "<th>Submission</th>"
+          f"<th>{SLOT_HEADERS[0]}</th>"
+          f"<th>{SLOT_HEADERS[1]}</th>"
+          f"<th>{SLOT_HEADERS[2]}</th>"
+          f"<th>{SLOT_HEADERS[3]}</th>"
+          "</tr>")
+    # Rows
+    for r in rows:
         print("<tr>")
-        print(f"<td>{row['Region']}</td>")
-        print(f"<td>{row['Submission']}</td>")
-        for slot in SLOTS:
-            status, log_path = row[slot]
-            color = {"OK":"#c6efce","NOK":"#ffc7ce","TBC":"#e7e6e6"}.get(status,"#ffffff")
-            print(f"<td style='background-color:{color};text-align:center;'><a href='{log_path}'>{status}</a></td>")
+        print(f"<td>{r['Region']}</td>")
+        # Submission column: hyperlink with text like "AUDforUS - Index"
+        # Note: UNC links usually work as-is in Outlook; if needed, prefix with file://
+        href = r['SubmissionLink']
+        title = r['SubmissionTitle']
+        print(f"<td><a href=\"{href}\">{title}</a></td>")
+
+        # Four status cells with background color
+        for key in SLOT_KEYS:
+            status = r[key]
+            bg = COLOR_MAP.get(status, "#ffffff")
+            print(f"<td style='background-color:{bg};text-align:center;'>{status}</td>")
         print("</tr>")
     print("</table>")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--date", required=True, help="Date in YYYY-MM-DD")
-    parser.add_argument("--mode", choices=["text","html"], default="text")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser(description="Build multi-region ICE status table (skeleton)")
+    ap.add_argument("--date", required=True, help="YYYY-MM-DD")
+    ap.add_argument("--mode", choices=["text", "html"], default="text")
+    args = ap.parse_args()
 
-    table = build_status_table(args.date)
+    rows = build_rows(args.date)
 
     if args.mode == "text":
-        print_text(table)
+        print_text(rows)
     else:
-        print_html(table)
+        print_html(rows)
