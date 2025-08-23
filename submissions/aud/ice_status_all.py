@@ -1,423 +1,422 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-ICE status table – real parsing (server paths), NAS-only hyperlinks.
-Time windows (local server time) – Index/SingleName vs IndexOption:
-
-Index/SingleName:
-  EarlyRun:   10:00–10:15
-  Latest #1:  16:00–16:04
-  Latest #2:  16:15–16:19
-  Final:      16:30–16:35
-
-IndexOption:
-  EarlyRun:   10:00–10:15
-  Latest #1:  16:00–16:04
-  Latest #2:  16:10–16:19
-  Final:      16:30–16:40  (from SubmissionSummaryIDX_OPT_*.log)
-
-Important: parsing ALWAYS reads from SERVER paths under D:\DATA\logs\fixlink\...
-Hyperlinks ALWAYS use NAS paths under \\lonshr-emlogmgmt\CIBFIEMCRET_LOGS\vol2\fixlink\ws9100ppc00462\...
-"""
 
 import argparse
 import os
 import re
-from datetime import datetime, time
+from dataclasses import dataclass
+from datetime import datetime, date, time, timedelta, timezone
+from typing import List, Optional, Tuple, Dict
 
-############################
-# CONSTANTS (do not change)
-############################
-REGIONS = ["AUDforUS", "SGDforUS", "EURforUS", "USD"]
-TYPES = ["Index", "SingleName"]  # IndexOption handled conditionally per region
+# ---- Timezones ----
+try:
+    from zoneinfo import ZoneInfo
+except Exception:
+    # If running on older Python or missing tzdata, user should install tzdata.
+    raise SystemExit("zoneinfo not available. On Windows, run: python -m pip install tzdata")
 
-# Root path to PARSE logs (server)
-SERVER_ROOT = r"D:\DATA\logs\fixlink"
+SERVER_TZ = ZoneInfo("Europe/London")  # Server writes timestamps in London local time (handles BST/DST)
 
-# Root path to LINK in HTML (NAS)
-NAS_ROOT = r"\\lonshr-emlogmgmt\CIBFIEMCRET_LOGS\vol2\fixlink\ws9100ppc00462"
+REGION_TZ: Dict[str, ZoneInfo] = {
+    # Region local clocks for *scheduling* windows:
+    "AUDforUS": ZoneInfo("Australia/Sydney"),
+    "SGDforUS": ZoneInfo("Asia/Singapore"),
+    "EURforUS": ZoneInfo("Europe/London"),     # If you later confirm Paris/Frankfurt, change to "Europe/Paris"
+    "USD":      ZoneInfo("America/New_York"),
+}
 
-# Filenames
-EARLY_FILE = "PriceGeneration_{region}_EarlyRun.log"
-FINAL_FILE = "PriceGeneration_{region}_FinalRun.log"
-IDXOPT_SUMMARY_FILE = "SubmissionSummaryIDX_OPT_{region}.log"
+# ---- Windows (local to each region) ----
+# Index & SingleName
+IDX_SN_WINDOWS = {
+    "early":   (time(10, 0), time(10, 15)),
+    "late1":   (time(16, 0), time(16, 4)),
+    "late2":   (time(16, 15), time(16, 19)),
+    "final":   (time(16, 30), time(16, 35)),
+}
+# IndexOption
+IDX_OPT_WINDOWS = {
+    "early":   (time(10, 0), time(10, 15)),
+    "late1":   (time(16, 0), time(16, 4)),
+    "late2":   (time(16, 10), time(16, 19)),  # per your note
+    "final":   (time(16, 30), time(16, 40)),  # per your note
+}
 
-# Regions that have IndexOption rows
-IDXOPT_REGIONS = ["EURforUS", "USD"]
+# ---- Files & Paths (DO NOT CHANGE: you said these are 100% correct) ----
+def server_path(base_date: str, typ: str, region: str, fname: str) -> str:
+    # Example:
+    # D:\DATA\logs\fixlink\2025-08-22\ICEDIRECT\Index\AUDforUS\PriceGeneration_AUDforUS_FinalRun.log
+    return os.path.join(r"D:\DATA\logs\fixlink", base_date, "ICEDIRECT", typ, region, fname)
 
-# Column titles (keep timings)
-COLS = [
-    ("Region", None),
-    ("SubmissionType", None),
-    ("EarlyRun", "10:00 AM"),
-    ("LatestRun #1", "4:00 PM"),
-    ("LatestRun #2", "4:15 PM"),
-    ("FinalSubmission", "4:30 PM"),
-    ("SubmissionLogs", None),
+def early_log_name(region: str) -> str:
+    # PriceGeneration_<REGION>_EarlyRun.log
+    return f"PriceGeneration_{region}_EarlyRun.log"
+
+def final_log_name(region: str) -> str:
+    # PriceGeneration_<REGION>_FinalRun.log
+    return f"PriceGeneration_{region}_FinalRun.log"
+
+def option_summary_name(region: str) -> str:
+    # SubmissionSummaryIDX_OPT_<REGION>.log
+    return f"SubmissionSummaryIDX_OPT_{region}.log"
+
+# NAS path for SubmissionLogs column (FinalRun only, or SubmissionSummary for IndexOption)
+def nas_path(base_date: str, typ: str, region: str, final_filename: str) -> str:
+    # Keep the convention exactly as you validated earlier
+    return r"\\lonshr-emlogmgmt\CIBFIEMCRET_LOGS\vol2\fixlink\ws9100ppc00462" + "\\" + os.path.join(
+        base_date, "ICEDIRECT", typ, region, final_filename
+    ).replace("/", "\\")
+
+# ---- Parsing helpers ----
+DT_PATTERNS = [
+    # [2025-08-21 16:30:00.069]  INFO - ...
+    re.compile(r"\[(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2}(?:\.\d+)?)\]"),
+    # 2025/08/21 16:25:16 INFO - ...
+    re.compile(r"(\d{4}/\d{2}/\d{2})\s+(\d{2}:\d{2}:\d{2})"),
+    # 2025-08-21 16:25:16 INFO - ...
+    re.compile(r"(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2})"),
 ]
 
-# Time windows (inclusive) per type
-def _win(h1,m1,h2,m2):
-    return (time(h1,m1), time(h2,m2))
-
-WINDOWS_IDX_SN = {
-    "early": _win(10, 0, 10, 15),
-    "latest1": _win(16, 0, 16, 4),
-    "latest2": _win(16, 15, 16, 19),
-    "final": _win(16, 30, 16, 35),
-}
-WINDOWS_IDXOPT = {
-    "early": _win(10, 0, 10, 15),
-    "latest1": _win(16, 0, 16, 4),
-    "latest2": _win(16, 10, 16, 19),
-    "final": _win(16, 30, 16, 40),  # from SubmissionSummary
-}
-
-# Timestamp patterns (handles [YYYY-MM-DD HH:MM:SS.mmm], YYYY/MM/DD HH:MM:SS, etc.)
-TS_PAT = re.compile(r"(?P<dt>\d{4}[-/]\d{2}[-/]\d{2}\s+\d{2}:\d{2}:\d{2})")
-
-OK_LINE = re.compile(r"Program is ending successfully", re.IGNORECASE)
-ERROR_HINT = re.compile(r"\b(ERROR|Exception|Validation Error\(s\):\s*[1-9]\d*)\b", re.IGNORECASE)
-
-# Missing/invalids parsing
-MISSING_CLEARABLE_PAT = re.compile(r"Missing\s+Clearable\s+Prices\s*:\s*(\d+)", re.IGNORECASE)
-MISSING_QUOTABLE_PAT = re.compile(r"Missing\s+Prices\s*\(Quotable.*?\)\s*:\s*(\d+)", re.IGNORECASE)
-INVALID_SN_LINE = re.compile(r"Curve\s+\[.*?\]\s+.*?not sent\.\s*Invalid\s*!.*", re.IGNORECASE)
-
-# IndexOption SubmissionSummary pats
-IDXOPT_ACCEPTED = re.compile(r"Accepted Index Option quotes\s+(\d+)", re.IGNORECASE)
-IDXOPT_REJECTED = re.compile(r"Rejected Index Option quotes\s+(\d+)", re.IGNORECASE)
-
-################################
-# Helpers
-################################
-def parse_args():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--date", required=True, help="YYYY-MM-DD")
-    ap.add_argument("--mode", choices=["html", "text"], default="html")
-    return ap.parse_args()
-
-def server_file(date_str, typ, region, kind):
-    day = date_str
-    base = os.path.join(SERVER_ROOT, day, "ICEDIRECT", typ, region)
-    if typ == "IndexOption" and kind == "summary":
-        return os.path.join(base, IDXOPT_SUMMARY_FILE.format(region=region))
-    if kind == "early":
-        return os.path.join(base, EARLY_FILE.format(region=region))
-    if kind == "final":
-        return os.path.join(base, FINAL_FILE.format(region=region))
+def parse_dt_from_line(line: str) -> Optional[datetime]:
+    for pat in DT_PATTERNS:
+        m = pat.search(line)
+        if m:
+            dstr = m.group(1)
+            tstr = m.group(2)
+            # normalize separators
+            dstr = dstr.replace("/", "-")
+            # strip fractional seconds if present
+            if "." in tstr:
+                tstr = tstr.split(".")[0]
+            try:
+                dt_naive = datetime.strptime(f"{dstr} {tstr}", "%Y-%m-%d %H:%M:%S")
+                # IMPORTANT: timestamps in files are server (London) local time
+                return dt_naive.replace(tzinfo=SERVER_TZ)
+            except Exception:
+                return None
     return None
 
-def nas_link(date_str, typ, region, kind):
-    day = date_str
-    base = os.path.join(NAS_ROOT, day, "ICEDIRECT", typ, region)
-    if typ == "IndexOption" and kind == "summary":
-        return os.path.join(base, IDXOPT_SUMMARY_FILE.format(region=region))
-    if kind == "early":
-        return os.path.join(base, EARLY_FILE.format(region=region))
-    if kind == "final":
-        return os.path.join(base, FINAL_FILE.format(region=region))
-    return "#"
+@dataclass
+class WindowStatus:
+    mark: str         # "✅" / "❌" / "⏳"
+    detail: str       # reason/debug
+    missing_info: List[str]  # lines to add to notes section (quotable/clearable/invalid)
 
-def read_text(path):
+SUCCESS_RE = re.compile(r"Program is ending successfully", re.IGNORECASE)
+VALIDATION_ERR_RE = re.compile(r"Validation Error\(s\)\s*:\s*(\d+)", re.IGNORECASE)
+MISSING_CLEARABLE_RE = re.compile(r"Missing\s+(?:Clearable\s+Prices|Prices\s*\(Clearable[^)]*\))\s*:\s*(\d+)", re.IGNORECASE)
+MISSING_QUOTABLE_RE = re.compile(r"Missing\s+(?:Quotable\s+Prices|Prices\s*\(Quotable[^)]*\))\s*:\s*(\d+)", re.IGNORECASE)
+MISSING_GENERIC_RE = re.compile(r"Missing\s+Prices\s*:\s*(\d+)", re.IGNORECASE)
+INVALID_CURVE_RE = re.compile(r"not sent\. Invalid", re.IGNORECASE)
+
+# For Index Option Summary
+ACCEPTED_OPT_RE = re.compile(r"Accepted\s+Index\s+Option\s+quotes\s+(\d+)", re.IGNORECASE)
+REJECTED_OPT_RE = re.compile(r"Rejected\s+Index\s+Option\s+quotes\s+(\d+)", re.IGNORECASE)
+WINDOW_OPEN_RE   = re.compile(r"The settlement window is OPEN", re.IGNORECASE)
+WINDOW_CLOSED_RE = re.compile(r"The settlement window is CLOSED", re.IGNORECASE)
+
+def region_window_to_server(date_str: str, region: str, t0: time, t1: time) -> Tuple[datetime, datetime]:
+    d_parts = [int(p) for p in date_str.split("-")]
+    d = date(d_parts[0], d_parts[1], d_parts[2])
+    rt0 = datetime.combine(d, t0, tzinfo=REGION_TZ[region])
+    rt1 = datetime.combine(d, t1, tzinfo=REGION_TZ[region])
+    # Convert to server (London) time for matching log timestamps
+    return rt0.astimezone(SERVER_TZ), rt1.astimezone(SERVER_TZ)
+
+def load_lines(path: str) -> List[str]:
     try:
-        with open(path, "r", encoding="utf-8", errors="ignore") as f:
-            return f.read()
-    except Exception:
-        return ""
-
-def last_timestamp_in_text(txt):
-    last = None
-    for m in TS_PAT.finditer(txt):
-        try:
-            dt = datetime.strptime(m.group("dt"), "%Y-%m-%d %H:%M:%S")
-        except ValueError:
-            dt = datetime.strptime(m.group("dt"), "%Y/%m/%d %H:%M:%S")
-        last = dt  # keep updating to end
-    return last
-
-def time_in_window(dt, start_t, end_t):
-    if dt is None:
-        return False
-    tt = dt.time()
-    return start_t <= tt <= end_t
-
-def split_runs_early(txt):
-    """
-    Return list of (block_text, end_dt) for each run in EarlyRun file.
-    A run is considered to end at an 'ending successfully' line; end_dt is the last timestamp seen in that block.
-    """
-    if not txt:
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            return f.readlines()
+    except FileNotFoundError:
         return []
-    lines = txt.splitlines()
-    blocks = []
-    cur = []
-    for ln in lines:
-        cur.append(ln)
-        if OK_LINE.search(ln):
-            block = "\n".join(cur)
-            end_dt = last_timestamp_in_text(block)
-            blocks.append((block, end_dt))
-            cur = []
-    # trailing partial (no successful end) is ignored for status
-    return blocks
-
-def classify_block(block_text):
-    """
-    Return "OK", "NOK", "WAIT", info_notes(list), caution_notes(list)
-    WAIT only used by callers when no block in window; here we assume we got a finished block.
-    """
-    info, caution = [], []
-
-    # SingleName invalids (informational unless clearable missing)
-    invalids = INVALID_SN_LINE.findall(block_text)
-    if invalids:
-        info.extend(invalids)
-
-    # Missing quotable (info)
-    mq = MISSING_QUOTABLE_PAT.search(block_text)
-    if mq and int(mq.group(1)) > 0:
-        info.append(f"Missing Quotable Prices: {mq.group(1)}")
-
-    # Missing clearable (caution -> NOK)
-    mc = MISSING_CLEARABLE_PAT.search(block_text)
-    if mc and int(mc.group(1)) > 0:
-        caution.append(f"Missing Clearable Prices: {mc.group(1)}")
-
-    # Hard errors
-    if ERROR_HINT.search(block_text) or caution:
-        return "NOK", info, caution
-
-    # Otherwise OK
-    return "OK", info, caution
-
-def pick_status_from_early(early_txt, win):
-    """
-    From EarlyRun file text, find the last finished block whose end timestamp falls within 'win'.
-    Return (status, info, caution). If none in window -> WAIT.
-    """
-    blocks = split_runs_early(early_txt)
-    start_t, end_t = win
-    best = None
-    for block_text, end_dt in blocks:
-        if end_dt and time_in_window(end_dt, start_t, end_t):
-            if best is None or end_dt > best[1]:
-                best = (block_text, end_dt)
-    if not best:
-        return "WAIT", [], []
-    status, info, caution = classify_block(best[0])
-    return status, info, caution
-
-def status_for_final_idx_sn(final_txt, win):
-    """
-    FinalRun (Index/SingleName). We require a finished block within final window.
-    """
-    return pick_status_from_early(final_txt, win)  # same logic: finished blocks with end time in window
-
-def status_for_idxopt_summary(sum_txt, win):
-    """
-    From SubmissionSummary (IndexOption) – if there is any activity in final window,
-    mark OK if Accepted>0 and Rejected==0; NOK if Rejected>0; else WAIT.
-    """
-    if not sum_txt:
-        return "WAIT", [], []
-    # Is there any timestamp in final window?
-    start_t, end_t = win
-    any_in_window = False
-    for m in TS_PAT.finditer(sum_txt):
+    except Exception:
+        # fallback cp1252 if needed
         try:
-            dt = datetime.strptime(m.group("dt"), "%Y-%m-%d %H:%M:%S")
-        except ValueError:
-            dt = datetime.strptime(m.group("dt"), "%Y/%m/%d %H:%M:%S")
-        if time_in_window(dt, start_t, end_t):
-            any_in_window = True
-            break
-    if not any_in_window:
-        return "WAIT", [], []
+            with open(path, "r", encoding="cp1252", errors="replace") as f:
+                return f.readlines()
+        except Exception:
+            return []
 
-    acc = 0
-    rej = 0
-    ma = list(IDXOPT_ACCEPTED.finditer(sum_txt))
-    mr = list(IDXOPT_REJECTED.finditer(sum_txt))
-    if ma:
-        acc = sum(int(m.group(1)) for m in ma)
-    if mr:
-        rej = sum(int(m.group(1)) for m in mr)
+def evaluate_window_from_early_or_final(lines: List[str], win_start: datetime, win_end: datetime) -> WindowStatus:
+    found_lines = []
+    for ln in lines:
+        dt = parse_dt_from_line(ln)
+        if dt and (win_start <= dt <= win_end):
+            found_lines.append(ln)
 
-    if rej > 0:
-        return "NOK", [], [f"IndexOption rejected quotes: {rej}"]
-    if acc > 0:
-        return "OK", [], []
-    # If we got here, activity but no counts? treat as WAIT conservatively
-    return "WAIT", [], []
-
-############################
-# HTML rendering
-############################
-def badge(status):
-    # ensure UTF-8 output; symbols are UTF-8
-    if status == "OK":
-        return "✅"
-    if status == "NOK":
-        return "❌"
-    return "⏳"
-
-def link(href, text):
-    if not href or href == "#":
-        return text
-    return f'<a href="{href}">{text}</a>'
-
-def render_html(rows):
-    # Column heads with timings on new line where present
-    ths = []
-    for title, tm in COLS:
-        if tm:
-            ths.append(f"<th><div>{title}</div><div style='font-size:12px;opacity:.75'>{tm}</div></th>")
+    if not found_lines:
+        # If the window has already ended (server now past end), show waiting or NOK?
+        now_srv = datetime.now(SERVER_TZ)
+        if now_srv > win_end:
+            return WindowStatus("⏳", "No lines in window (file not ready or run didn’t execute).", [])
         else:
-            ths.append(f"<th>{title}</th>")
+            return WindowStatus("⏳", "Window not yet complete.", [])
 
-    # build table
-    trs = []
-    for r in rows:
-        trs.append(
-            "<tr>"
-            f"<td>{r['region']}</td>"
-            f"<td>{r['subtype_html']}</td>"
-            f"<td class='st'>{badge(r['early'])}</td>"
-            f"<td class='st'>{badge(r['latest1'])}</td>"
-            f"<td class='st'>{badge(r['latest2'])}</td>"
-            f"<td class='st'>{badge(r['final'])}</td>"
-            f"<td>{r['loglinks_html']}</td>"
-            "</tr>"
-        )
+    success = any(SUCCESS_RE.search(ln) for ln in found_lines)
+    val_errs = sum(int(m.group(1)) for ln in found_lines for m in [VALIDATION_ERR_RE.search(ln)] if m)
+    miss_clearable = sum(int(m.group(1)) for ln in found_lines for m in [MISSING_CLEARABLE_RE.search(ln)] if m)
+    # Some logs only have "Missing Prices: X" (treat as generic — does not flip to NOK unless we know they’re clearable)
+    miss_generic = sum(int(m.group(1)) for ln in found_lines for m in [MISSING_GENERIC_RE.search(ln)] if m)
+    miss_quotable = sum(int(m.group(1)) for ln in found_lines for m in [MISSING_QUOTABLE_RE.search(ln)] if m)
 
-    # notes
-    info_lines = []
-    caution_lines = []
-    for r in rows:
-        for s in r.get("info_notes", []):
-            info_lines.append(f"{r['subtype_plain']}: {s}")
-        for s in r.get("caution_notes", []):
-            caution_lines.append(f"{r['subtype_plain']}: {s}")
+    invalid_msgs = [ln.strip() for ln in found_lines if INVALID_CURVE_RE.search(ln)]
 
-    notes_html = ""
-    if info_lines or caution_lines:
-        notes_html = "<div style='margin-top:14px'>"
-        if info_lines:
-            notes_html += "<div><b>Info (Quotable missing / invalid curves):</b><br>" + "<br>".join(info_lines) + "</div>"
-        if caution_lines:
-            notes_html += "<div style='margin-top:10px;color:#b91c1c'><b>Caution (Clearable missing / rejects):</b><br>" + "<br>".join(caution_lines) + "</div>"
-        notes_html += "</div>"
+    notes = []
+    if miss_quotable:
+        notes.append(f"Info: Missing Quotable Prices = {miss_quotable}")
+    if miss_generic and not miss_clearable and not miss_quotable:
+        # Generic message seen in Index logs
+        notes.append(f"Info: Missing Prices (unspecified) = {miss_generic}")
+    if invalid_msgs:
+        notes.extend([f"Info: {imsg}" for imsg in invalid_msgs])
 
+    if val_errs > 0 or miss_clearable > 0:
+        return WindowStatus("❌", f"ValidationErrors={val_errs}, MissingClearable={miss_clearable}", notes)
+
+    if success:
+        return WindowStatus("✅", "Program ended successfully in window.", notes)
+
+    # No explicit success line but also no hard errors
+    return WindowStatus("⏳", "No explicit success line found in window.", notes)
+
+def evaluate_final_from_option_summary(lines: List[str], win_start: datetime, win_end: datetime) -> WindowStatus:
+    found_lines = []
+    for ln in lines:
+        dt = parse_dt_from_line(ln)
+        if dt and (win_start <= dt <= win_end):
+            found_lines.append(ln)
+
+    if not found_lines:
+        now_srv = datetime.now(SERVER_TZ)
+        if now_srv > win_end:
+            return WindowStatus("⏳", "No lines in summary window.", [])
+        else:
+            return WindowStatus("⏳", "Summary window not yet complete.", [])
+
+    accepted = 0
+    rejected = 0
+    for ln in found_lines:
+        m1 = ACCEPTED_OPT_RE.search(ln)
+        if m1:
+            accepted = max(accepted, int(m1.group(1)))
+        m2 = REJECTED_OPT_RE.search(ln)
+        if m2:
+            rejected = max(rejected, int(m2.group(1)))
+
+    if rejected > 0:
+        return WindowStatus("❌", f"Rejected Index Option quotes = {rejected}", [])
+
+    if accepted > 0:
+        return WindowStatus("✅", f"Accepted Index Option quotes = {accepted}", [])
+
+    # If neither found, keep waiting
+    return WindowStatus("⏳", "No accepted/rejected counts found.", [])
+
+# ---- Row + HTML rendering ----
+@dataclass
+class Row:
+    region: str
+    submission_type_label: str       # e.g., "AUDforUS – INDEX"
+    early_href: Optional[str]
+    final_href: Optional[str]
+    early_mark: str
+    late1_mark: str
+    late2_mark: str
+    final_mark: str
+    submission_logs_text: str        # NAS path string
+    notes: List[str]
+
+def build_rows(base_date: str) -> Tuple[List[Row], List[str]]:
+    rows: List[Row] = []
+    all_notes: List[str] = []
+
+    # helper to make windows in server tz from region/local tz
+    def win(typ: str, region: str, key: str) -> Tuple[datetime, datetime]:
+        if typ == "IndexOption":
+            t0, t1 = IDX_OPT_WINDOWS[key]
+        else:
+            t0, t1 = IDX_SN_WINDOWS[key]
+        return region_window_to_server(base_date, region, t0, t1)
+
+    # Define the ordered set: region → (Index, SingleName) and IndexOption where applicable
+    plan = [
+        ("AUDforUS", ["Index", "SingleName"], []),                         # no IndexOption for AUD
+        ("SGDforUS", ["Index", "SingleName"], []),                         # no IndexOption for SGD
+        ("EURforUS", ["Index", "SingleName"], ["IndexOption"]),            # IndexOption exists
+        ("USD",      ["Index", "SingleName"], ["IndexOption"]),            # IndexOption exists
+    ]
+
+    for region, main_types, opt_types in plan:
+        for typ in main_types + opt_types:
+            # Build file paths
+            if typ == "IndexOption":
+                # Early & Latest from EarlyRun.log (IndexOption folder)
+                early_path = server_path(base_date, "IndexOption", region, early_log_name(region))
+                final_path = server_path(base_date, "IndexOption", region, option_summary_name(region))
+                final_filename = option_summary_name(region)
+            else:
+                early_path = server_path(base_date, typ, region, early_log_name(region))
+                final_path = server_path(base_date, typ, region, final_log_name(region))
+                final_filename = final_log_name(region)
+
+            # Hrefs (keep as you validated earlier)
+            early_href = early_path if os.path.exists(early_path) else early_path  # keep href even if not present yet
+            final_href = final_path if os.path.exists(final_path) else final_path
+
+            # NAS path text (Final run logs only; for IndexOption it’s the SubmissionSummary)
+            submission_logs_text = nas_path(base_date, typ, region, final_filename)
+
+            # Load files
+            early_lines = load_lines(early_path)
+            final_lines = load_lines(final_path)
+
+            # Compute marks
+            w_early = win(typ, region, "early")
+            w_late1 = win(typ, region, "late1")
+            w_late2 = win(typ, region, "late2")
+            w_final = win(typ, region, "final")
+
+            # Evaluate windows
+            early_status = evaluate_window_from_early_or_final(early_lines, *w_early)
+            late1_status = evaluate_window_from_early_or_final(early_lines, *w_late1)
+            late2_status = evaluate_window_from_early_or_final(early_lines, *w_late2)
+
+            if typ == "IndexOption":
+                final_status = evaluate_final_from_option_summary(final_lines, *w_final)
+            else:
+                final_status = evaluate_window_from_early_or_final(final_lines, *w_final)
+
+            # Accumulate notes
+            notes = []
+            notes.extend(early_status.missing_info)
+            notes.extend(late1_status.missing_info)
+            notes.extend(late2_status.missing_info)
+            notes.extend(final_status.missing_info)
+            # De-dup & keep order
+            seen = set()
+            deduped = []
+            for n in notes:
+                if n not in seen:
+                    deduped.append(n)
+                    seen.add(n)
+
+            # Row label & ordering
+            label = f"{region} – {'INDEX' if typ=='Index' else ('SINGLE NAME' if typ=='SingleName' else 'INDEX OPTION')}"
+            row = Row(
+                region=region.split('forUS')[0],  # "AUD", "SGD", "EUR", "USD"
+                submission_type_label=label,
+                early_href=early_href,
+                final_href=final_href,
+                early_mark=early_status.mark,
+                late1_mark=late1_status.mark,
+                late2_mark=late2_status.mark,
+                final_mark=final_status.mark,
+                submission_logs_text=submission_logs_text,
+                notes=deduped
+            )
+            rows.append(row)
+            all_notes.extend([f"{label}: {n}" for n in deduped])
+
+    return rows, all_notes
+
+def render_html(rows: List[Row], notes: List[str]) -> str:
+    # Big centered marks, timings on new lines as requested earlier
     css = """
     <style>
-      table{border-collapse:collapse;width:100%;font-family:Segoe UI,Arial,sans-serif}
-      th,td{border:1px solid #ddd;padding:10px;text-align:left;vertical-align:middle}
-      th{background:#f7f7f8}
-      td.st{font-size:22px;text-align:center}
-      a{color:#0b60d0;text-decoration:none} a:hover{text-decoration:underline}
+      body { font-family: Arial, Helvetica, sans-serif; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { border: 1px solid #ddd; padding: 10px; }
+      th { background: #f6f6f6; text-align: center; }
+      td { vertical-align: middle; }
+      td.center { text-align: center; font-size: 28px; }
+      a { text-decoration: none; }
+      .label { font-weight: 600; }
+      .notes { margin-top: 20px; font-size: 13px; white-space: pre-wrap; }
+      .subtype a { font-weight: 600; }
+      .mono { font-family: Consolas, "Courier New", monospace; }
     </style>
     """
+    header = """
+    <tr>
+      <th>Region</th>
+      <th>SubmissionType</th>
+      <th>EarlyRun<br/>(10:00–10:15)</th>
+      <th>LatestRun #1<br/>(16:00–16:04)</th>
+      <th>LatestRun #2<br/>(16:15–16:19)</th>
+      <th>FinalSubmission<br/>(4:30 PM)</th>
+      <th>SubmissionLogs</th>
+    </tr>
+    """
+
+    def cell_link(text: str, href: Optional[str]) -> str:
+        if href:
+            return f'<a href="file:///{href.replace("\\\\","/").replace(" ","%20")}">{text}</a>'
+        return text
+
+    # Build table rows grouped by region order AUD, SGD, EUR, USD with Index then Single Name, then Index Option where applicable
+    # rows are already in that order by build_rows
+    body_rows = []
+    for r in rows:
+        # FinalSubmission column title changes in header "4:30 PM" but we still link to FinalRun or SubmissionSummary for options
+        body_rows.append(f"""
+        <tr>
+          <td class="center">{r.region}</td>
+          <td class="subtype">{cell_link(r.submission_type_label, r.early_href)}</td>
+          <td class="center">{r.early_mark}</td>
+          <td class="center">{r.late1_mark}</td>
+          <td class="center">{r.late2_mark}</td>
+          <td class="center">{cell_link(r.final_mark, r.final_href)}</td>
+          <td class="mono">{r.submission_logs_text}</td>
+        </tr>
+        """)
+
+    notes_section = ""
+    if notes:
+        notes_text = "\n".join(notes)
+        notes_section = f"""
+        <div class="notes">
+          <div class="label">Notes / Info (quotable), Cautions (clearable), Invalids</div>
+          <pre>{notes_text}</pre>
+        </div>
+        """
 
     html = f"""<!doctype html>
-<html><head<meta charset="utf-8">{css}</head>
+<html><head><meta charset="utf-8"><title>ICE Status</title>{css}</head>
 <body>
-<table>
-<thead><tr>{''.join(ths)}</tr></thead>
-<tbody>
-{''.join(trs)}
-</tbody>
-</table>
-{notes_html}
-</body></html>"""
+  <table>
+    {header}
+    {''.join(body_rows)}
+  </table>
+  {notes_section}
+</body></html>
+"""
     return html
 
-############################
-# Row builder
-############################
-def build_rows(day):
-    rows = []
-
-    def add_row(region, typ, windows):
-        subtype_plain = f"{region}-{ 'IDX_OPT' if typ=='IndexOption' else ('INDEX' if typ=='Index' else 'SN') }"
-        subtype_html = link(nas_link(day, typ, region, "early"), subtype_plain)
-
-        # Load texts
-        early_txt = read_text(server_file(day, typ, region, "early")) if typ in ("Index","SingleName","IndexOption") else ""
-        final_txt = ""
-        sum_txt = ""
-        if typ in ("Index", "SingleName"):
-            final_txt = read_text(server_file(day, typ, region, "final"))
-        else:  # IndexOption
-            sum_txt = read_text(server_file(day, "IndexOption", region, "summary"))
-
-        # statuses
-        s_early, info_e, caut_e = pick_status_from_early(early_txt, windows["early"])
-        s_l1, info_l1, caut_l1 = pick_status_from_early(early_txt, windows["latest1"])
-        s_l2, info_l2, caut_l2 = pick_status_from_early(early_txt, windows["latest2"])
-
-        if typ in ("Index", "SingleName"):
-            s_final, info_f, caut_f = status_for_final_idx_sn(final_txt, windows["final"])
-        else:
-            s_final, info_f, caut_f = status_for_idxopt_summary(sum_txt, windows["final"])
-
-        # links column
-        logs_links = []
-        logs_links.append(link(nas_link(day, typ, region, "early"), "EarlyRun"))
-        if typ in ("Index","SingleName"):
-            logs_links.append(link(nas_link(day, typ, region, "final"), "FinalRun"))
-        else:
-            logs_links.append(link(nas_link(day, "IndexOption", region, "summary"), "SubmissionSummary"))
-        loglinks_html = " | ".join(logs_links)
-
-        # notes aggregate
-        info_notes = info_e + info_l1 + info_l2 + info_f
-        caution_notes = caut_e + caut_l1 + caut_l2 + caut_f
-
-        rows.append({
-            "region": region.split("for")[0],  # display as AUD / SGD / EUR / USD
-            "subtype_plain": subtype_plain,
-            "subtype_html": subtype_html,
-            "early": s_early,
-            "latest1": s_l1,
-            "latest2": s_l2,
-            "final": s_final,
-            "loglinks_html": loglinks_html,
-            "info_notes": info_notes,
-            "caution_notes": caution_notes,
-        })
-
-    # Order: AUD(Index, SN), SGD(Index, SN), EUR(Index, SN, IDX_OPT), USD(Index, SN, IDX_OPT)
-    for r in ["AUDforUS", "SGDforUS", "EURforUS", "USD"]:
-        # Index
-        add_row(r, "Index", WINDOWS_IDX_SN)
-        # SingleName
-        add_row(r, "SingleName", WINDOWS_IDX_SN)
-        # IndexOption where applicable
-        if r in IDXOPT_REGIONS:
-            add_row(r, "IndexOption", WINDOWS_IDXOPT)
-
-    return rows
-
-############################
-# TEXT renderer (optional)
-############################
-def render_text(rows):
-    def s(x): return {"OK":"OK","NOK":"NOK","WAIT":"WAIT"}[x]
-    print("Region | SubmissionType | Early | L#1 | L#2 | Final | Logs")
+def render_text(rows: List[Row], notes: List[str]) -> None:
+    # Minimal text mode for quick checks (UTF-8 safe)
     for r in rows:
-        print(f"{r['region']} | {r['subtype_plain']} | {s(r['early'])} | {s(r['latest1'])} | {s(r['latest2'])} | {s(r['final'])} | {r['loglinks_html']}")
+        print(f"{r.region} | {r.submission_type_label} | {r.early_mark} | {r.late1_mark} | {r.late2_mark} | {r.final_mark} | {r.submission_logs_text}")
+    if notes:
+        print("\nNOTES:")
+        for n in notes:
+            print(f" - {n}")
 
-############################
-# main
-############################
-if __name__ == "__main__":
-    args = parse_args()
-    rows = build_rows(args.date)
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", required=True, help="Server folder date, e.g. 2025-08-22")
+    ap.add_argument("--mode", choices=["html", "text"], default="html")
+    args = ap.parse_args()
+
+    rows, notes = build_rows(args.date)
 
     if args.mode == "text":
-        render_text(rows)
+        # text mode uses default console encoding, but contains only ASCII + emojis
+        # If your console can't show emojis, redirect to a file or use html mode
+        render_text(rows, notes)
     else:
-        html = render_html(rows)
-        # Always write UTF-8 to stdout to preserve emoji
+        html = render_html(rows, notes)
+        # ALWAYS write bytes to preserve UTF-8 (✅/❌/⏳)
         import sys
         sys.stdout.buffer.write(html.encode("utf-8"))
+
+if __name__ == "__main__":
+    main()
