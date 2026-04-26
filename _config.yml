@@ -1,4 +1,6 @@
+theme: minima
 title: Python in 100 Days
-description: A structured, beginner-friendly Python course by Nikunj Jakhotia
-theme: jekyll-theme-cayman
-show_downloads: false
+description: A complete Python course by Nikunj Jakhotia
+exclude:
+  - "*.py"
+  - ".claude"
