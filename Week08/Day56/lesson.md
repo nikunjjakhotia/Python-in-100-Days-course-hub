@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 55](../Day55/lesson.md) | [🏠 Home](../../) | [Day 57 →](../../Week09/Day57/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 56 – Project: Weather Dashboard CLI
 
 ## What You're Building
@@ -77,3 +83,9 @@ if __name__ == "__main__":
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 55](../Day55/lesson.md) | [Day 57 →](../../Week09/Day57/lesson.md)
+<!-- nav -->

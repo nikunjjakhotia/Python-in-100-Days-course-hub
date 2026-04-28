@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 29](../Day29/lesson.md) | [🏠 Home](../../) | [Day 31 →](../Day31/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 30 – Advanced Dictionaries
 
 ## Learning Objectives
@@ -80,3 +86,9 @@ print(employees["alice"]["dept"])  # Engineering
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 29](../Day29/lesson.md) | [Day 31 →](../Day31/lesson.md)
+<!-- nav -->

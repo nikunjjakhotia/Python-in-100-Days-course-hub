@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 04](../Day04/lesson.md) | [🏠 Home](../../) | [Day 06 →](../Day06/lesson.md)
+
+---
+<!-- nav -->
+
 # 📘 Day 05 – Tuples, Sets, and Dictionaries
 
 Welcome to Day 05! Today, we’ll explore **tuples**, **sets**, and **dictionaries** — three fundamental data structures in Python. Each serves a unique purpose and is used frequently in real-world applications.
@@ -66,3 +72,9 @@ print(person.get("age"))        # Get value safely
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 04](../Day04/lesson.md) | [Day 06 →](../Day06/lesson.md)
+<!-- nav -->

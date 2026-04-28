@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 24](../Day24/lesson.md) | [🏠 Home](../../) | [Day 26 →](../Day26/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 25 – Writing Files
 
 ## Learning Objectives
@@ -65,3 +71,9 @@ with open("scores.csv", "w") as f:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 24](../Day24/lesson.md) | [Day 26 →](../Day26/lesson.md)
+<!-- nav -->

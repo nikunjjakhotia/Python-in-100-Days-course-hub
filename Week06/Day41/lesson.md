@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 40](../Day40/lesson.md) | [🏠 Home](../../) | [Day 42 →](../Day42/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 41 – OOP Challenges
 
 ## Learning Objectives
@@ -72,3 +78,9 @@ class Stack:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 40](../Day40/lesson.md) | [Day 42 →](../Day42/lesson.md)
+<!-- nav -->

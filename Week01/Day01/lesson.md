@@ -1,3 +1,9 @@
+<!-- nav -->
+[🏠 Home](../../) | [Day 02 →](../Day02/lesson.md)
+
+---
+<!-- nav -->
+
 # 🟨 Python in 100 Days – Day 1: Introduction to Python
 
 Welcome to Day 1 of the Python journey! 🎉  
@@ -104,3 +110,9 @@ Explore the interface — you'll get comfortable quickly.
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [Day 02 →](../Day02/lesson.md)
+<!-- nav -->

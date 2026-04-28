@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 89](../Day89/lesson.md) | [🏠 Home](../../) | [Day 91 →](../Day91/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 90 – Documentation & README
 
 ## Learning Objectives
@@ -99,3 +105,9 @@ __pycache__/
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 89](../Day89/lesson.md) | [Day 91 →](../Day91/lesson.md)
+<!-- nav -->

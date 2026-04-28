@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 07 Lessons — Modules & Packages](../../Week07/)
+
+---
+<!-- assignments-nav -->
+
 # Week 07 Assignments — Modules & Packages
 
 **Days 43–49 · Topics: Import, Standard Library, Custom Modules, Packages, venv, pip**

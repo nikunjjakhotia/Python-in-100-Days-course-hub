@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 60](../Day60/lesson.md) | [🏠 Home](../../) | [Day 62 →](../Day62/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 61 – Python `sqlite3` Module Deep Dive
 
 ## Learning Objectives
@@ -86,3 +92,9 @@ print("Table exists:", exists is not None)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 60](../Day60/lesson.md) | [Day 62 →](../Day62/lesson.md)
+<!-- nav -->

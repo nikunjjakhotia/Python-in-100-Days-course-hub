@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 14](../../Week02/Day14/lesson.md) | [🏠 Home](../../) | [Day 16 →](../Day16/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 15 – Defining Functions
 
 ## Learning Objectives
@@ -75,3 +81,9 @@ help(add)        # Shows the docstring
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 14](../../Week02/Day14/lesson.md) | [Day 16 →](../Day16/lesson.md)
+<!-- nav -->

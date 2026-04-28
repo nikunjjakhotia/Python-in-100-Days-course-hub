@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 10](../Day10/lesson.md) | [🏠 Home](../../) | [Day 12 →](../Day12/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 11 – For Loops
 
 ## Learning Objectives
@@ -73,3 +79,9 @@ for name, score in zip(names, scores):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 10](../Day10/lesson.md) | [Day 12 →](../Day12/lesson.md)
+<!-- nav -->

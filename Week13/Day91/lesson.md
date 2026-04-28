@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 90](../Day90/lesson.md) | [🏠 Home](../../) | [Day 92 →](../../Week14/Day92/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 91 – Final Polish & Code Review
 
 ## Learning Objectives
@@ -77,3 +83,9 @@ git push
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 90](../Day90/lesson.md) | [Day 92 →](../../Week14/Day92/lesson.md)
+<!-- nav -->

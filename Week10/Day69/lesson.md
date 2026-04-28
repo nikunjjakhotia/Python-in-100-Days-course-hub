@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 68](../Day68/lesson.md) | [🏠 Home](../../) | [Day 70 →](../Day70/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 69 – Building a REST API with Flask
 
 ## Learning Objectives
@@ -83,3 +89,9 @@ def bad_request(e):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 68](../Day68/lesson.md) | [Day 70 →](../Day70/lesson.md)
+<!-- nav -->

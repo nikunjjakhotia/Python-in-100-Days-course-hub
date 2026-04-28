@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 78](../Day78/lesson.md) | [🏠 Home](../../) | [Day 80 →](../Day80/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 79 – Loading & Exploring Data
 
 ## Learning Objectives
@@ -75,3 +81,9 @@ df = df.reset_index(drop=True)   # reassign 0-based integer index
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 78](../Day78/lesson.md) | [Day 80 →](../Day80/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 22](../Day22/lesson.md) | [🏠 Home](../../) | [Day 24 →](../Day24/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 23 – Custom Exceptions
 
 ## Learning Objectives
@@ -88,3 +94,9 @@ Catching `AppError` catches all subclasses too.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 22](../Day22/lesson.md) | [Day 24 →](../Day24/lesson.md)
+<!-- nav -->

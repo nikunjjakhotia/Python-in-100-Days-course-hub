@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 31](../Day31/lesson.md) | [🏠 Home](../../) | [Day 33 →](../Day33/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 32 – Nested Data Structures
 
 ## Learning Objectives
@@ -76,3 +82,9 @@ students.append({"name": "Diana", "grade": "A+", "score": 100})
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 31](../Day31/lesson.md) | [Day 33 →](../Day33/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 08](../Day08/lesson.md) | [🏠 Home](../../) | [Day 10 →](../Day10/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 09 – Nested Conditions
 
 ## Learning Objectives
@@ -73,3 +79,9 @@ print(f"Your ticket price: ${price}")
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 08](../Day08/lesson.md) | [Day 10 →](../Day10/lesson.md)
+<!-- nav -->

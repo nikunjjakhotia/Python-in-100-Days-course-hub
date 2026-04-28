@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 02 Lessons — Control Flow](../../Week02/)
+
+---
+<!-- assignments-nav -->
+
 # Week 02 Assignments — Control Flow
 
 **Days 8–14 · Topics: if/elif/else, Comparison Operators, while, for, break/continue, List Comprehensions**

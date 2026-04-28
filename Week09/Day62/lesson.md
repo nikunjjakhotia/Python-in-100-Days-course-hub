@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 61](../Day61/lesson.md) | [🏠 Home](../../) | [Day 63 →](../Day63/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 62 – Building a CRUD App
 
 ## Learning Objectives
@@ -89,3 +95,9 @@ class ContactDB:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 61](../Day61/lesson.md) | [Day 63 →](../Day63/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 19](../Day19/lesson.md) | [🏠 Home](../../) | [Day 21 →](../Day21/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 20 – Functions: Practice Problems
 
 ## Learning Objectives
@@ -62,3 +68,9 @@ print(word_frequency("the cat sat on the mat the cat"))
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 19](../Day19/lesson.md) | [Day 21 →](../Day21/lesson.md)
+<!-- nav -->

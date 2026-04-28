@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 47](../Day47/lesson.md) | [🏠 Home](../../) | [Day 49 →](../Day49/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 48 – Popular Third-Party Libraries
 
 ## Learning Objectives
@@ -79,3 +85,9 @@ print(table)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 47](../Day47/lesson.md) | [Day 49 →](../Day49/lesson.md)
+<!-- nav -->

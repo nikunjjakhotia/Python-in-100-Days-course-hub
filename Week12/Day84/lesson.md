@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 83](../Day83/lesson.md) | [🏠 Home](../../) | [Day 85 →](../../Week13/Day85/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 84 – Project: Sales Analysis Dashboard
 
 ## What You're Building
@@ -70,3 +76,9 @@ plt.show()
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 83](../Day83/lesson.md) | [Day 85 →](../../Week13/Day85/lesson.md)
+<!-- nav -->

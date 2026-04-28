@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 71](../Day71/lesson.md) | [🏠 Home](../../) | [Day 73 →](../Day73/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 72 – Web Scraping with `requests` + `BeautifulSoup`
 
 ## Learning Objectives
@@ -87,3 +93,9 @@ print(text, "—", author, tags)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 71](../Day71/lesson.md) | [Day 73 →](../Day73/lesson.md)
+<!-- nav -->

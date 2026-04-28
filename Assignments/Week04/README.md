@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 04 Lessons — Error Handling & File I/O](../../Week04/)
+
+---
+<!-- assignments-nav -->
+
 # Week 04 Assignments — Error Handling & File I/O
 
 **Days 22–28 · Topics: try/except, Custom Exceptions, Text Files, CSV, JSON, Context Managers**

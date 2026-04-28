@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 57](../Day57/lesson.md) | [🏠 Home](../../) | [Day 59 →](../Day59/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 58 – Creating Tables & Inserting Data
 
 ## Learning Objectives
@@ -92,3 +98,9 @@ with sqlite3.connect("shop.db") as conn:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 57](../Day57/lesson.md) | [Day 59 →](../Day59/lesson.md)
+<!-- nav -->

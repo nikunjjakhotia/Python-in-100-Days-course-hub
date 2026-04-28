@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 50](../Day50/lesson.md) | [🏠 Home](../../) | [Day 52 →](../Day52/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 51 – GET Requests & Query Parameters
 
 ## Learning Objectives
@@ -76,3 +82,9 @@ with open("image.png", "wb") as f:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 50](../Day50/lesson.md) | [Day 52 →](../Day52/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 49](../../Week07/Day49/lesson.md) | [🏠 Home](../../) | [Day 51 →](../Day51/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 50 – Intro to APIs
 
 ## Learning Objectives
@@ -90,3 +96,9 @@ r.raise_for_status()  # raises HTTPError if 4xx/5xx
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 49](../../Week07/Day49/lesson.md) | [Day 51 →](../Day51/lesson.md)
+<!-- nav -->

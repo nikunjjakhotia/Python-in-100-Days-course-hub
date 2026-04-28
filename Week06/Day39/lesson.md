@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 38](../Day38/lesson.md) | [🏠 Home](../../) | [Day 40 →](../Day40/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 39 – Inheritance
 
 ## Learning Objectives
@@ -76,3 +82,9 @@ print(issubclass(Dog, Animal)) # True
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 38](../Day38/lesson.md) | [Day 40 →](../Day40/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 07](../../Week01/Day07/lesson.md) | [🏠 Home](../../) | [Day 09 →](../Day09/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 08 – Conditional Statements: if / elif / else
 
 ## Learning Objectives
@@ -73,3 +79,9 @@ print(status)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 07](../../Week01/Day07/lesson.md) | [Day 09 →](../Day09/lesson.md)
+<!-- nav -->

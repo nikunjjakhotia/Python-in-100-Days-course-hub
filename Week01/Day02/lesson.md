@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 01](../Day01/lesson.md) | [🏠 Home](../../) | [Day 03 →](../Day03/lesson.md)
+
+---
+<!-- nav -->
+
 # 📘 Day 02: Comments, Variables & Data Types
 
 ---
@@ -85,3 +91,9 @@ print(type(42))        # <class 'int'>
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 01](../Day01/lesson.md) | [Day 03 →](../Day03/lesson.md)
+<!-- nav -->

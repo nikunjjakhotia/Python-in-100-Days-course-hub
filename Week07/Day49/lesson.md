@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 48](../Day48/lesson.md) | [🏠 Home](../../) | [Day 50 →](../../Week08/Day50/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 49 – Project: Build a Reusable Utility Library
 
 ## What You're Building
@@ -69,3 +75,9 @@ Re-export key functions so users can write `from pyutils import slugify`.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 48](../Day48/lesson.md) | [Day 50 →](../../Week08/Day50/lesson.md)
+<!-- nav -->

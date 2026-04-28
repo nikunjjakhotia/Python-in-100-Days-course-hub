@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 41](../Day41/lesson.md) | [🏠 Home](../../) | [Day 43 →](../../Week07/Day43/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 42 – Project: Bank Account System
 
 ## What You're Building
@@ -49,3 +55,9 @@ Transaction History:
 
 ## Starter Code
 See `exercises.py` for the full project.
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 41](../Day41/lesson.md) | [Day 43 →](../../Week07/Day43/lesson.md)
+<!-- nav -->

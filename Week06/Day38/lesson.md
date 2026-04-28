@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 37](../Day37/lesson.md) | [🏠 Home](../../) | [Day 39 →](../Day39/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 38 – Constructors & Magic Methods
 
 ## Learning Objectives
@@ -80,3 +86,9 @@ print(v1 + v2)   # Vector(4, 6)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 37](../Day37/lesson.md) | [Day 39 →](../Day39/lesson.md)
+<!-- nav -->

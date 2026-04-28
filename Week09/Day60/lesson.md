@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 59](../Day59/lesson.md) | [🏠 Home](../../) | [Day 61 →](../Day61/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 60 – UPDATE, DELETE & Transactions
 
 ## Learning Objectives
@@ -72,3 +78,9 @@ conn.commit()
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 59](../Day59/lesson.md) | [Day 61 →](../Day61/lesson.md)
+<!-- nav -->

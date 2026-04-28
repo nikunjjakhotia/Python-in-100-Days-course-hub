@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 43](../Day43/lesson.md) | [🏠 Home](../../) | [Day 45 →](../Day45/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 44 – Standard Library Highlights
 
 ## Learning Objectives
@@ -83,3 +89,9 @@ print(today + timedelta(days=7))   # one week from today
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 43](../Day43/lesson.md) | [Day 45 →](../Day45/lesson.md)
+<!-- nav -->

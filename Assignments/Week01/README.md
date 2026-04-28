@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 01 Lessons — Python Fundamentals](../../Week01/)
+
+---
+<!-- assignments-nav -->
+
 # Week 01 Assignments — Python Fundamentals
 
 **Days 1–7 · Topics: Variables, Data Types, Strings, Lists, Dicts, Sets, Type Conversion**

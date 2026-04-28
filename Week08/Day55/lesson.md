@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 54](../Day54/lesson.md) | [🏠 Home](../../) | [Day 56 →](../Day56/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 55 – Pagination & Rate Limiting
 
 ## Learning Objectives
@@ -92,3 +98,9 @@ for i in range(1, 4):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 54](../Day54/lesson.md) | [Day 56 →](../Day56/lesson.md)
+<!-- nav -->

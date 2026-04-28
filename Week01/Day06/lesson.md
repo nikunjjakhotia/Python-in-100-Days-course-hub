@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 05](../Day05/lesson.md) | [🏠 Home](../../) | [Day 07 →](../Day07/lesson.md)
+
+---
+<!-- nav -->
+
 # 📘 Day 06 – Type Casting & String Formatting
 
 Welcome to Day 06! Today, you’ll learn how to **convert data types** and **format strings** in a clean, readable way.
@@ -60,3 +66,9 @@ print(f"Price: ${price:.2f}")  # Rounds to 2 decimal places
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 05](../Day05/lesson.md) | [Day 07 →](../Day07/lesson.md)
+<!-- nav -->

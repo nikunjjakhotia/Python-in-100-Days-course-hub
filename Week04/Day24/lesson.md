@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 23](../Day23/lesson.md) | [🏠 Home](../../) | [Day 25 →](../Day25/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 24 – Reading Files
 
 ## Learning Objectives
@@ -80,3 +86,9 @@ except FileNotFoundError:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 23](../Day23/lesson.md) | [Day 25 →](../Day25/lesson.md)
+<!-- nav -->

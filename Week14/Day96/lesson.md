@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 95](../Day95/lesson.md) | [🏠 Home](../../) | [Day 97 →](../Day97/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 96 – Interview Prep: Data Structures
 
 ## Learning Objectives
@@ -71,3 +77,9 @@ def is_valid(s):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 95](../Day95/lesson.md) | [Day 97 →](../Day97/lesson.md)
+<!-- nav -->

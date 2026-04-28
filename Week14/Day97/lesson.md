@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 96](../Day96/lesson.md) | [🏠 Home](../../) | [Day 98 →](../Day98/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 97 – Interview Prep: Algorithms
 
 ## Learning Objectives
@@ -103,3 +109,9 @@ flat = [x for sub in nested for x in sub]
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 96](../Day96/lesson.md) | [Day 98 →](../Day98/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 39](../Day39/lesson.md) | [🏠 Home](../../) | [Day 41 →](../Day41/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 40 – Polymorphism & Encapsulation
 
 ## Learning Objectives
@@ -73,3 +79,9 @@ print(p.age)     # 30 — uses getter
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 39](../Day39/lesson.md) | [Day 41 →](../Day41/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 98](../Day98/lesson.md) | [🏠 Home](../../) | [Day 100 →](../Day100/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 99 – Deploying Python Projects
 
 ## Learning Objectives
@@ -77,3 +83,9 @@ web: gunicorn app:app
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 98](../Day98/lesson.md) | [Day 100 →](../Day100/lesson.md)
+<!-- nav -->

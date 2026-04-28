@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 13 Lessons — Capstone Project](../../Week13/)
+
+---
+<!-- assignments-nav -->
+
 # Week 13 Assignments — Capstone Project
 
 **Days 85–91 · Build and polish your end-to-end Python project**

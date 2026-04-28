@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 05 Lessons — Advanced Data Structures](../../Week05/)
+
+---
+<!-- assignments-nav -->
+
 # Week 05 Assignments — Advanced Data Structures
 
 **Days 29–35 · Topics: Stacks, Queues, Linked Lists, Sorting, Generators, Decorators**

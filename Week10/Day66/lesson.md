@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 65](../Day65/lesson.md) | [🏠 Home](../../) | [Day 67 →](../Day67/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 66 – Templates with Jinja2
 
 ## Learning Objectives
@@ -107,3 +113,9 @@ def index():
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 65](../Day65/lesson.md) | [Day 67 →](../Day67/lesson.md)
+<!-- nav -->

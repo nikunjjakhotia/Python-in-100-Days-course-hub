@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 44](../Day44/lesson.md) | [🏠 Home](../../) | [Day 46 →](../Day46/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 45 – Creating Your Own Modules
 
 ## Learning Objectives
@@ -75,3 +81,9 @@ Fix: move the shared code into a third module `c.py`.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 44](../Day44/lesson.md) | [Day 46 →](../Day46/lesson.md)
+<!-- nav -->

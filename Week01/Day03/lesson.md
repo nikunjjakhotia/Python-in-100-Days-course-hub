@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 02](../Day02/lesson.md) | [🏠 Home](../../) | [Day 04 →](../Day04/lesson.md)
+
+---
+<!-- nav -->
+
 # 📘 Day 03 – Numbers, Strings & Input
 
 Welcome to Day 03! Today we'll explore how Python handles numbers and strings, and how to accept input from users.
@@ -81,3 +87,9 @@ print("Sum:", a + b)
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 02](../Day02/lesson.md) | [Day 04 →](../Day04/lesson.md)
+<!-- nav -->

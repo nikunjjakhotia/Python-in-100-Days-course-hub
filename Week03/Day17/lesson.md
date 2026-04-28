@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 16](../Day16/lesson.md) | [🏠 Home](../../) | [Day 18 →](../Day18/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 17 – Scope: Local, Global & Enclosing
 
 ## Learning Objectives
@@ -92,3 +98,9 @@ outer()   # prints 1, then 2
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 16](../Day16/lesson.md) | [Day 18 →](../Day18/lesson.md)
+<!-- nav -->

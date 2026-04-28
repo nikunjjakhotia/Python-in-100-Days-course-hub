@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 66](../Day66/lesson.md) | [🏠 Home](../../) | [Day 68 →](../Day68/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 67 – Forms & POST Requests
 
 ## Learning Objectives
@@ -86,3 +92,9 @@ flash("Message sent successfully!", "success")
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 66](../Day66/lesson.md) | [Day 68 →](../Day68/lesson.md)
+<!-- nav -->

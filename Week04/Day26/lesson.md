@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 25](../Day25/lesson.md) | [🏠 Home](../../) | [Day 27 →](../Day27/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 26 – os & pathlib
 
 ## Learning Objectives
@@ -74,3 +80,9 @@ print(stat.st_size)   # size in bytes
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 25](../Day25/lesson.md) | [Day 27 →](../Day27/lesson.md)
+<!-- nav -->

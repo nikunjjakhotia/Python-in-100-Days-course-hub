@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 45](../Day45/lesson.md) | [🏠 Home](../../) | [Day 47 →](../Day47/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 46 – Packages & `__init__.py`
 
 ## Learning Objectives
@@ -82,3 +88,9 @@ from mypackage.math.stats import mean
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 45](../Day45/lesson.md) | [Day 47 →](../Day47/lesson.md)
+<!-- nav -->

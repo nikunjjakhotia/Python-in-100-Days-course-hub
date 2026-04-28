@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 58](../Day58/lesson.md) | [🏠 Home](../../) | [Day 60 →](../Day60/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 59 – SELECT Queries & Filtering
 
 ## Learning Objectives
@@ -83,3 +89,9 @@ for row in rows:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 58](../Day58/lesson.md) | [Day 60 →](../Day60/lesson.md)
+<!-- nav -->

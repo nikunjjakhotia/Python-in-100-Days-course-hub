@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 17](../Day17/lesson.md) | [🏠 Home](../../) | [Day 19 →](../Day19/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 18 – Recursion
 
 ## Learning Objectives
@@ -71,3 +77,9 @@ for i in range(8):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 17](../Day17/lesson.md) | [Day 19 →](../Day19/lesson.md)
+<!-- nav -->

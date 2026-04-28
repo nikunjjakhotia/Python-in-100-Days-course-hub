@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 52](../Day52/lesson.md) | [🏠 Home](../../) | [Day 54 →](../Day54/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 53 – POST Requests & Authentication
 
 ## Learning Objectives
@@ -88,3 +94,9 @@ Add `.env` to `.gitignore` so it never gets committed.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 52](../Day52/lesson.md) | [Day 54 →](../Day54/lesson.md)
+<!-- nav -->

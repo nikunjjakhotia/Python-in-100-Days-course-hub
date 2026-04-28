@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 09](../Day09/lesson.md) | [🏠 Home](../../) | [Day 11 →](../Day11/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 10 – While Loops
 
 ## Learning Objectives
@@ -79,3 +85,9 @@ print(f"Age accepted: {age}")
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 09](../Day09/lesson.md) | [Day 11 →](../Day11/lesson.md)
+<!-- nav -->

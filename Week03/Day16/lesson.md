@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 15](../Day15/lesson.md) | [🏠 Home](../../) | [Day 17 →](../Day17/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 16 – Arguments & Return Values
 
 ## Learning Objectives
@@ -76,3 +82,9 @@ print(low, high)   # 1 9
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 15](../Day15/lesson.md) | [Day 17 →](../Day17/lesson.md)
+<!-- nav -->

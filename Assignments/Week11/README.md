@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 11 Lessons — Automation](../../Week11/)
+
+---
+<!-- assignments-nav -->
+
 # Week 11 Assignments — Automation
 
 **Days 71–77 · Topics: pathlib, shutil, BeautifulSoup, CSV Automation, Email, Scheduling**

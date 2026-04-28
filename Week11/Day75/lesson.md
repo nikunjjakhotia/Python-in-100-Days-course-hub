@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 74](../Day74/lesson.md) | [🏠 Home](../../) | [Day 76 →](../Day76/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 75 – Email Automation with `smtplib`
 
 ## Learning Objectives
@@ -81,3 +87,9 @@ msg.attach(part)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 74](../Day74/lesson.md) | [Day 76 →](../Day76/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 80](../Day80/lesson.md) | [🏠 Home](../../) | [Day 82 →](../Day82/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 81 – Grouping, Aggregation & Merging
 
 ## Learning Objectives
@@ -79,3 +85,9 @@ wide = pd.concat([df_a, df_b], axis=1)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 80](../Day80/lesson.md) | [Day 82 →](../Day82/lesson.md)
+<!-- nav -->

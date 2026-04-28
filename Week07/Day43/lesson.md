@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 42](../../Week06/Day42/lesson.md) | [🏠 Home](../../) | [Day 44 →](../Day44/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 43 – Intro to Modules
 
 ## Learning Objectives
@@ -65,3 +71,9 @@ This lets a file be both a runnable script and a reusable module.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 42](../../Week06/Day42/lesson.md) | [Day 44 →](../Day44/lesson.md)
+<!-- nav -->

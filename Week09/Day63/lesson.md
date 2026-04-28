@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 62](../Day62/lesson.md) | [🏠 Home](../../) | [Day 64 →](../../Week10/Day64/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 63 – Project: To-Do List Database App
 
 ## What You're Building
@@ -83,3 +89,9 @@ def main():
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 62](../Day62/lesson.md) | [Day 64 →](../../Week10/Day64/lesson.md)
+<!-- nav -->

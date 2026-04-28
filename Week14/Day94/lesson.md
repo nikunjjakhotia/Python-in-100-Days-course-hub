@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 93](../Day93/lesson.md) | [🏠 Home](../../) | [Day 95 →](../Day95/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 94 – Building Portfolio Projects
 
 ## Learning Objectives
@@ -62,3 +68,9 @@ For each portfolio project, aim to check all of these:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 93](../Day93/lesson.md) | [Day 95 →](../Day95/lesson.md)
+<!-- nav -->

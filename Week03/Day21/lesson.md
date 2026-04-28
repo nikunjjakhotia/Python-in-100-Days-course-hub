@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 20](../Day20/lesson.md) | [🏠 Home](../../) | [Day 22 →](../../Week04/Day22/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 21 – Project: Calculator App
 
 ## What You're Building
@@ -59,3 +65,9 @@ See `exercises.py` for the full project.
 1. Add modulus (`%`) operation
 2. Keep a history list of all calculations
 3. Let the user use the previous result as the next input
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 20](../Day20/lesson.md) | [Day 22 →](../../Week04/Day22/lesson.md)
+<!-- nav -->

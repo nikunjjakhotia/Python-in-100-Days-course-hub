@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 28](../../Week04/Day28/lesson.md) | [🏠 Home](../../) | [Day 30 →](../Day30/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 29 – List Comprehensions
 
 ## Learning Objectives
@@ -80,3 +86,9 @@ unique_lengths = {len(w) for w in ["cat", "dog", "elephant", "ant"]}
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 28](../../Week04/Day28/lesson.md) | [Day 30 →](../Day30/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 79](../Day79/lesson.md) | [🏠 Home](../../) | [Day 81 →](../Day81/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 80 – Filtering, Sorting & Selection
 
 ## Learning Objectives
@@ -76,3 +82,9 @@ df["age_group"] = pd.cut(df["age"], bins=[0, 18, 35, 60, 120], labels=["child","
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 79](../Day79/lesson.md) | [Day 81 →](../Day81/lesson.md)
+<!-- nav -->

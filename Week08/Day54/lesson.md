@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 53](../Day53/lesson.md) | [🏠 Home](../../) | [Day 55 →](../Day55/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 54 – Error Handling with APIs
 
 ## Learning Objectives
@@ -83,3 +89,9 @@ elif r.ok:                      # True for 200–299
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 53](../Day53/lesson.md) | [Day 55 →](../Day55/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 81](../Day81/lesson.md) | [🏠 Home](../../) | [Day 83 →](../Day83/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 82 – Data Cleaning — Nulls, Types & Duplicates
 
 ## Learning Objectives
@@ -79,3 +85,9 @@ df.drop_duplicates(subset=["email"])   # dedupe on specific column
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 81](../Day81/lesson.md) | [Day 83 →](../Day83/lesson.md)
+<!-- nav -->

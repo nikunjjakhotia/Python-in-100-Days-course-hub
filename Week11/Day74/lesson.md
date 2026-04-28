@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 73](../Day73/lesson.md) | [🏠 Home](../../) | [Day 75 →](../Day75/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 74 – Automating CSV Reports
 
 ## Learning Objectives
@@ -86,3 +92,9 @@ for csv_file in Path("data").glob("*.csv"):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 73](../Day73/lesson.md) | [Day 75 →](../Day75/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 94](../Day94/lesson.md) | [🏠 Home](../../) | [Day 96 →](../Day96/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 95 – Contributing to Open Source
 
 ## Learning Objectives
@@ -88,3 +94,9 @@ No code changes — documentation only.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 94](../Day94/lesson.md) | [Day 96 →](../Day96/lesson.md)
+<!-- nav -->

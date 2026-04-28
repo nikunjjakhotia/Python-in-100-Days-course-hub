@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 92](../Day92/lesson.md) | [🏠 Home](../../) | [Day 94 →](../Day94/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 93 – Optimising Your GitHub Profile
 
 ## Learning Objectives
@@ -72,3 +78,9 @@ Types: `feat`, `fix`, `docs`, `test`, `refactor`, `chore`
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 92](../Day92/lesson.md) | [Day 94 →](../Day94/lesson.md)
+<!-- nav -->

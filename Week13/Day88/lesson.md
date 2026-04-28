@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 87](../Day87/lesson.md) | [🏠 Home](../../) | [Day 89 →](../Day89/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 88 – Core Feature Implementation — Part 2
 
 ## Learning Objectives
@@ -82,3 +88,9 @@ def run():
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 87](../Day87/lesson.md) | [Day 89 →](../Day89/lesson.md)
+<!-- nav -->

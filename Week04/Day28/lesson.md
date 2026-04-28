@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 27](../Day27/lesson.md) | [🏠 Home](../../) | [Day 29 →](../../Week05/Day29/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 28 – Project: Log Analyzer
 
 ## What You're Building
@@ -58,3 +64,9 @@ See `exercises.py` for the full project.
 1. Accept the log filename as a command-line argument (`sys.argv`)
 2. Filter entries by date range
 3. Export the report in JSON format
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 27](../Day27/lesson.md) | [Day 29 →](../../Week05/Day29/lesson.md)
+<!-- nav -->

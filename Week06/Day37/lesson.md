@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 36](../Day36/lesson.md) | [🏠 Home](../../) | [Day 38 →](../Day38/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 37 – Instance vs Class Variables
 
 ## Learning Objectives
@@ -75,3 +81,9 @@ print(Temperature.is_freezing(-5))  # True
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 36](../Day36/lesson.md) | [Day 38 →](../Day38/lesson.md)
+<!-- nav -->

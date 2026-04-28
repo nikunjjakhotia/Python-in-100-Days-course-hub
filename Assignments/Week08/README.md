@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 08 Lessons — APIs & Web Requests](../../Week08/)
+
+---
+<!-- assignments-nav -->
+
 # Week 08 Assignments — APIs & Web Requests
 
 **Days 50–56 · Topics: HTTP, GET/POST, JSON, Auth, Error Handling, Pagination**

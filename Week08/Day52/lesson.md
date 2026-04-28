@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 51](../Day51/lesson.md) | [🏠 Home](../../) | [Day 53 →](../Day53/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 52 – JSON Parsing & Response Handling
 
 ## Learning Objectives
@@ -82,3 +88,9 @@ print(loaded[0]["name"])
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 51](../Day51/lesson.md) | [Day 53 →](../Day53/lesson.md)
+<!-- nav -->

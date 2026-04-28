@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 64](../Day64/lesson.md) | [🏠 Home](../../) | [Day 66 →](../Day66/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 65 – Routes, URL Parameters & Views
 
 ## Learning Objectives
@@ -81,3 +87,9 @@ def submit():
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 64](../Day64/lesson.md) | [Day 66 →](../Day66/lesson.md)
+<!-- nav -->

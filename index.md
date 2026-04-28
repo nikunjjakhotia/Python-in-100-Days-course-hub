@@ -12,6 +12,14 @@ One lesson, one set of exercises, every day.
 
 ---
 
+## Get Started
+
+1. [Set up your environment — Day 1](/Python-in-100-Days-course-hub/Week01/Day01/lesson)
+2. [Install PyCharm (setup guide)](/Python-in-100-Days-course-hub/Week01/Day01/Pycharm/pycharm)
+3. [Browse the full curriculum](#curriculum)
+
+---
+
 ## Curriculum
 
 ### [Week 1 — Python Fundamentals](Week01/) · Days 1–7

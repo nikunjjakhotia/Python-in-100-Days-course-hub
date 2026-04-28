@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 97](../Day97/lesson.md) | [🏠 Home](../../) | [Day 99 →](../Day99/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 98 – Interview Prep: OOP & Design Patterns
 
 ## Learning Objectives
@@ -98,3 +104,9 @@ class EventEmitter:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 97](../Day97/lesson.md) | [Day 99 →](../Day99/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 12](../Day12/lesson.md) | [🏠 Home](../../) | [Day 14 →](../Day14/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 13 – Mini Challenges: Control Flow Practice
 
 ## Learning Objectives
@@ -75,3 +81,9 @@ print(reversed_word)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 12](../Day12/lesson.md) | [Day 14 →](../Day14/lesson.md)
+<!-- nav -->

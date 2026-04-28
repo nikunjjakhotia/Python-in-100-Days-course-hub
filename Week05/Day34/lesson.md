@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 33](../Day33/lesson.md) | [🏠 Home](../../) | [Day 35 →](../Day35/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 34 – Real-World Use Cases for Data Structures
 
 ## Learning Objectives
@@ -78,3 +84,9 @@ user = users_dict.get(42)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 33](../Day33/lesson.md) | [Day 35 →](../Day35/lesson.md)
+<!-- nav -->

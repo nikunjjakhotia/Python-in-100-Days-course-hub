@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 91](../../Week13/Day91/lesson.md) | [🏠 Home](../../) | [Day 93 →](../Day93/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 92 – Writing a Python Developer Resume
 
 ## Learning Objectives
@@ -67,3 +73,9 @@ Include these where truthful:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 91](../../Week13/Day91/lesson.md) | [Day 93 →](../Day93/lesson.md)
+<!-- nav -->

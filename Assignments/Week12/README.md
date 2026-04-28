@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 12 Lessons — Pandas & Data Visualisation](../../Week12/)
+
+---
+<!-- assignments-nav -->
+
 # Week 12 Assignments — Pandas & Data Visualisation
 
 **Days 78–84 · Topics: Series, DataFrame, Exploration, Filtering, GroupBy, Cleaning, Matplotlib, Seaborn**

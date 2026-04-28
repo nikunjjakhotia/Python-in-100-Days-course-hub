@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 30](../Day30/lesson.md) | [🏠 Home](../../) | [Day 32 →](../Day32/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 31 – Sets & Operations
 
 ## Learning Objectives
@@ -74,3 +80,9 @@ fs = frozenset({1, 2, 3})
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 30](../Day30/lesson.md) | [Day 32 →](../Day32/lesson.md)
+<!-- nav -->

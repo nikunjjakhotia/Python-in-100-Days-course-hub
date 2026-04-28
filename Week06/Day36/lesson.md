@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 35](../../Week05/Day35/lesson.md) | [🏠 Home](../../) | [Day 37 →](../Day37/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 36 – Classes & Objects
 
 ## Learning Objectives
@@ -70,3 +76,9 @@ print(c)          # Circle(r=5)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 35](../../Week05/Day35/lesson.md) | [Day 37 →](../Day37/lesson.md)
+<!-- nav -->

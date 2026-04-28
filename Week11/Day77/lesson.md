@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 76](../Day76/lesson.md) | [🏠 Home](../../) | [Day 78 →](../../Week12/Day78/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 77 – Project: File Organiser Bot
 
 ## What You're Building
@@ -74,3 +80,9 @@ Always implement a `--dry-run` mode that prints what would happen without moving
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 76](../Day76/lesson.md) | [Day 78 →](../../Week12/Day78/lesson.md)
+<!-- nav -->

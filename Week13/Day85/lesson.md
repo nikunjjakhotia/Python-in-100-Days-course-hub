@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 84](../../Week12/Day84/lesson.md) | [🏠 Home](../../) | [Day 86 →](../Day86/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 85 – Capstone Planning & Architecture
 
 ## Learning Objectives
@@ -77,3 +83,9 @@ Keep the layers separate — your business logic should not import Flask, and yo
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 84](../../Week12/Day84/lesson.md) | [Day 86 →](../Day86/lesson.md)
+<!-- nav -->

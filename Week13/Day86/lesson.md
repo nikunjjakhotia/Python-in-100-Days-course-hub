@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 85](../Day85/lesson.md) | [🏠 Home](../../) | [Day 87 →](../Day87/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 86 – Project Scaffold & Database Schema
 
 ## Learning Objectives
@@ -100,3 +106,9 @@ if __name__ == "__main__":
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 85](../Day85/lesson.md) | [Day 87 →](../Day87/lesson.md)
+<!-- nav -->

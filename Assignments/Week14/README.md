@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 14 Lessons — Career & Portfolio](../../Week14/)
+
+---
+<!-- assignments-nav -->
+
 # Week 14 Assignments — Career & Portfolio
 
 **Days 92–100 · Resume, GitHub, Interviews, Deployment**

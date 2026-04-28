@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 67](../Day67/lesson.md) | [🏠 Home](../../) | [Day 69 →](../Day69/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 68 – SQLite with Flask
 
 ## Learning Objectives
@@ -96,3 +102,9 @@ def create_user():
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 67](../Day67/lesson.md) | [Day 69 →](../Day69/lesson.md)
+<!-- nav -->

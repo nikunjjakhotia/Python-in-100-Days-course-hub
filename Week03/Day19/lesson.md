@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 18](../Day18/lesson.md) | [🏠 Home](../../) | [Day 20 →](../Day20/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 19 – Lambda Functions
 
 ## Learning Objectives
@@ -77,3 +83,9 @@ print(by_score)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 18](../Day18/lesson.md) | [Day 20 →](../Day20/lesson.md)
+<!-- nav -->

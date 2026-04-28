@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 03 Lessons — Functions](../../Week03/)
+
+---
+<!-- assignments-nav -->
+
 # Week 03 Assignments — Functions
 
 **Days 15–21 · Topics: Function Definition, Parameters, *args/**kwargs, Scope, Lambda, Recursion**

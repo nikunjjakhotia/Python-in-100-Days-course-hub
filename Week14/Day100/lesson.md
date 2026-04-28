@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 99](../Day99/lesson.md) | [🏠 Home](../../)
+
+---
+<!-- nav -->
+
 # Day 100 – Course Wrap-Up & What's Next
 
 ## Congratulations!
@@ -74,3 +80,9 @@ Thank you for taking this course. Every line of code you wrote brought you here.
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 99](../Day99/lesson.md)
+<!-- nav -->

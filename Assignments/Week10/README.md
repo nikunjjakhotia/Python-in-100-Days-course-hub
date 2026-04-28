@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 10 Lessons — Flask Web Development](../../Week10/)
+
+---
+<!-- assignments-nav -->
+
 # Week 10 Assignments — Flask Web Development
 
 **Days 64–70 · Topics: Routes, URL Params, Jinja2 Templates, Forms, SQLite + Flask, REST API**

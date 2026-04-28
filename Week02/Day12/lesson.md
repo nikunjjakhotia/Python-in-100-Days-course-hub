@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 11](../Day11/lesson.md) | [🏠 Home](../../) | [Day 13 →](../Day13/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 12 – range() & Loop Control
 
 ## Learning Objectives
@@ -74,3 +80,9 @@ for i in range(1, 6):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 11](../Day11/lesson.md) | [Day 13 →](../Day13/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 88](../Day88/lesson.md) | [🏠 Home](../../) | [Day 90 →](../Day90/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 89 – Testing with `unittest`
 
 ## Learning Objectives
@@ -90,3 +96,9 @@ class TestDB(unittest.TestCase):
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 88](../Day88/lesson.md) | [Day 90 →](../Day90/lesson.md)
+<!-- nav -->

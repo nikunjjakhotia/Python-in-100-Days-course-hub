@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 06](../Day06/lesson.md) | [🏠 Home](../../) | [Day 08 →](../../Week02/Day08/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 07 – Project: My Bio App
 
 ## What You're Building
@@ -56,3 +62,9 @@ See `exercises.py` for the full project code.
 1. Add a second hobby and print both with a comma separator.
 2. Display the user's birth year by calculating `2025 - age`.
 3. Add a simple ASCII border around the output.
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 06](../Day06/lesson.md) | [Day 08 →](../../Week02/Day08/lesson.md)
+<!-- nav -->

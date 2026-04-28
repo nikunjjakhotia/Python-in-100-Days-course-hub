@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 13](../Day13/lesson.md) | [🏠 Home](../../) | [Day 15 →](../../Week03/Day15/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 14 – Project: Quiz Game
 
 ## What You're Building
@@ -60,3 +66,9 @@ See `exercises.py` for the full project.
 1. Shuffle question order using `random.shuffle()`
 2. Add a timer per question using `time` module
 3. Let the player choose how many questions to attempt
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 13](../Day13/lesson.md) | [Day 15 →](../../Week03/Day15/lesson.md)
+<!-- nav -->

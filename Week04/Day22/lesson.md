@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 21](../../Week03/Day21/lesson.md) | [🏠 Home](../../) | [Day 23 →](../Day23/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 22 – try / except / finally
 
 ## Learning Objectives
@@ -87,3 +93,9 @@ except Exception as e:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 21](../../Week03/Day21/lesson.md) | [Day 23 →](../Day23/lesson.md)
+<!-- nav -->

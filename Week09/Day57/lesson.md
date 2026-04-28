@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 56](../../Week08/Day56/lesson.md) | [🏠 Home](../../) | [Day 58 →](../Day58/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 57 – Intro to SQL & SQLite
 
 ## Learning Objectives
@@ -86,3 +92,9 @@ with sqlite3.connect("myapp.db") as conn:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 56](../../Week08/Day56/lesson.md) | [Day 58 →](../Day58/lesson.md)
+<!-- nav -->

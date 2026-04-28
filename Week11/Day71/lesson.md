@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 70](../../Week10/Day70/lesson.md) | [🏠 Home](../../) | [Day 72 →](../Day72/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 71 – File System Automation with `pathlib` & `shutil`
 
 ## Learning Objectives
@@ -88,3 +94,9 @@ print(datetime.fromtimestamp(stat.st_mtime))
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 70](../../Week10/Day70/lesson.md) | [Day 72 →](../Day72/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 77](../../Week11/Day77/lesson.md) | [🏠 Home](../../) | [Day 79 →](../Day79/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 78 – Intro to pandas — Series & DataFrame
 
 ## Learning Objectives
@@ -81,3 +87,9 @@ df.to_csv("output.csv", index=False)
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 77](../../Week11/Day77/lesson.md) | [Day 79 →](../Day79/lesson.md)
+<!-- nav -->

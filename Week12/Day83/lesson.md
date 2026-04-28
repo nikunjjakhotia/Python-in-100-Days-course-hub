@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 82](../Day82/lesson.md) | [🏠 Home](../../) | [Day 84 →](../Day84/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 83 – Matplotlib & Seaborn Visualisation
 
 ## Learning Objectives
@@ -86,3 +92,9 @@ plt.show()
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 82](../Day82/lesson.md) | [Day 84 →](../Day84/lesson.md)
+<!-- nav -->

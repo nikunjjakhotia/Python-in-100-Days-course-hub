@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 75](../Day75/lesson.md) | [🏠 Home](../../) | [Day 77 →](../Day77/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 76 – Task Scheduling with `schedule`
 
 ## Learning Objectives
@@ -104,3 +110,9 @@ if __name__ == "__main__":
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 75](../Day75/lesson.md) | [Day 77 →](../Day77/lesson.md)
+<!-- nav -->

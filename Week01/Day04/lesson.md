@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 03](../Day03/lesson.md) | [🏠 Home](../../) | [Day 05 →](../Day05/lesson.md)
+
+---
+<!-- nav -->
+
 # 📘 Day 04 – Lists & Indexing
 
 Welcome to Day 04! Today we’ll dive into **lists** — a versatile and commonly used data structure in Python — and learn how to access elements using **indexing**.
@@ -65,3 +71,9 @@ print(colors)
 ➡️ [Next: Course Contents](../CourseContents.md)
 
 ⬅️ [Back: Home](../index.md)
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 03](../Day03/lesson.md) | [Day 05 →](../Day05/lesson.md)
+<!-- nav -->

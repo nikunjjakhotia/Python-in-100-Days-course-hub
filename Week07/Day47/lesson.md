@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 46](../Day46/lesson.md) | [🏠 Home](../../) | [Day 48 →](../Day48/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 47 – Virtual Environments & pip
 
 ## Learning Objectives
@@ -82,3 +88,9 @@ __pycache__/
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 46](../Day46/lesson.md) | [Day 48 →](../Day48/lesson.md)
+<!-- nav -->

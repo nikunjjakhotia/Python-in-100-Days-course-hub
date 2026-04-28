@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 34](../Day34/lesson.md) | [🏠 Home](../../) | [Day 36 →](../../Week06/Day36/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 35 – Project: Student Report Generator
 
 ## What You're Building
@@ -59,3 +65,9 @@ Class avg:   73.7
 
 ## Starter Code
 See `exercises.py` for the full project.
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 34](../Day34/lesson.md) | [Day 36 →](../../Week06/Day36/lesson.md)
+<!-- nav -->

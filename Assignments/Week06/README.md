@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 06 Lessons — Object-Oriented Programming](../../Week06/)
+
+---
+<!-- assignments-nav -->
+
 # Week 06 Assignments — Object-Oriented Programming
 
 **Days 36–42 · Topics: Classes, Inheritance, Encapsulation, Magic Methods, Class Methods**

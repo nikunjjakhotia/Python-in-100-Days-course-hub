@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 72](../Day72/lesson.md) | [🏠 Home](../../) | [Day 74 →](../Day74/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 73 – Parsing & Extracting Structured Data
 
 ## Learning Objectives
@@ -79,3 +85,9 @@ with open("quotes.json", "w", encoding="utf-8") as f:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 72](../Day72/lesson.md) | [Day 74 →](../Day74/lesson.md)
+<!-- nav -->

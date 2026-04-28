@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 32](../Day32/lesson.md) | [🏠 Home](../../) | [Day 34 →](../Day34/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 33 – Sorting & Filtering
 
 ## Learning Objectives
@@ -69,3 +75,9 @@ evens = [x for x in numbers if x % 2 == 0]
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 32](../Day32/lesson.md) | [Day 34 →](../Day34/lesson.md)
+<!-- nav -->

@@ -1,3 +1,9 @@
+<!-- assignments-nav -->
+[🏠 Home](../../) | [📚 Week 09 Lessons — SQLite & Databases](../../Week09/)
+
+---
+<!-- assignments-nav -->
+
 # Week 09 Assignments — SQLite & Databases
 
 **Days 57–63 · Topics: SQL Basics, INSERT/SELECT/UPDATE/DELETE, Transactions, CRUD, sqlite3**

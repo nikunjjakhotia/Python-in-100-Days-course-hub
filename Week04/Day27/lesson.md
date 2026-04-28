@@ -1,3 +1,9 @@
+<!-- nav -->
+[← Day 26](../Day26/lesson.md) | [🏠 Home](../../) | [Day 28 →](../Day28/lesson.md)
+
+---
+<!-- nav -->
+
 # Day 27 – File I/O Challenges
 
 ## Learning Objectives
@@ -72,3 +78,9 @@ with open("errors_only.txt", "w") as f:
 
 ## Exercises
 See `exercises.py`
+
+---
+
+<!-- nav -->
+[📝 Exercises](exercises.py) | [← Day 26](../Day26/lesson.md) | [Day 28 →](../Day28/lesson.md)
+<!-- nav -->
