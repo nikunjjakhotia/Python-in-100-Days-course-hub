@@ -4,6 +4,19 @@ description: "by Nikunj Jakhotia · Free Python course from beginner to job-read
 author:
   name: Nikunj Jakhotia
   email: 215087107+nikunjjakhotia@users.noreply.github.com
+defaults:
+  - scope:
+      path: "Week*"
+    values:
+      published: false
+  - scope:
+      path: "Assignments"
+    values:
+      published: false
+  - scope:
+      path: "Week*/*/lesson.md"
+    values:
+      sitemap: false
 exclude:
   - "*.py"
   - ".claude"

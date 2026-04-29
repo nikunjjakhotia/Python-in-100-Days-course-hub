@@ -10,10 +10,12 @@ One lesson, one set of exercises, every day.
 
 **Created by [Nikunj Jakhotia](https://www.linkedin.com/in/nikunjjakhotia/)** · [GitHub Repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)
 
-[![Star on GitHub](https://img.shields.io/github/stars/nikunjjakhotia/Python-in-100-Days-course-hub?style=social)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)
+[![⭐ Star this repo](https://img.shields.io/github/stars/nikunjjakhotia/Python-in-100-Days-course-hub?style=social&label=Star%20this%20repo)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/stargazers)
 [![Forks](https://img.shields.io/github/forks/nikunjjakhotia/Python-in-100-Days-course-hub?style=social)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/fork)
 [![Days](https://img.shields.io/badge/Days-100-brightgreen)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)
 [![Language](https://img.shields.io/badge/Language-Python-blue)](https://python.org)
+
+*Found this useful? [⭐ Star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find this course!*
 
 ---
 
