@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/LinkedIn-Course-0A66C2?logo=linkedin" alt="LinkedIn"/>
 </p>
 
+> ⭐ If you find this useful, please star the repo — it helps others discover it!
+
 # Python in 100 Days – Text-Based Course
 
 A structured, project-driven Python course that takes you from absolute beginner to job-ready in 100 days. Every day ships a lesson, runnable exercises, and at least one project per week.

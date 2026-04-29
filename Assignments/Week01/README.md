@@ -59,3 +59,7 @@ A Python script that prompts the user for personal details and displays a polish
 | Hobbies displayed as a numbered list via loop | /10 |
 | Non-numeric age handled without crashing | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

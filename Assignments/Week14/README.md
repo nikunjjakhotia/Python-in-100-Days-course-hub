@@ -58,3 +58,7 @@ Real career artefacts — not exercises — that you will use in job application
 | Self-assessment scorecard and interview prep summary written | /10 |
 | LinkedIn completion post published and shared | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

@@ -58,3 +58,7 @@ A hands-free bot: point it at any folder, run it, and files get sorted into subf
 | `report.csv` written with all required columns | /10 |
 | Edge cases handled (already sorted, hidden files, errors) | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

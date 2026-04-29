@@ -59,3 +59,7 @@ A book catalogue stored entirely in memory using lists, dicts, and sets — no d
 | Genre average rating summary built with dict comprehension | /5 |
 | Recently viewed deque updates and displays correctly | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

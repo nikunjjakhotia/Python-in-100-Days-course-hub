@@ -59,3 +59,7 @@ A fully persistent grade tracker where records survive between runs, every opera
 | JSON summary exported on exit | /5 |
 | Activity log appended with timestamps | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

@@ -59,3 +59,7 @@ A well-structured Python program split into clean functions, where each tool is 
 | `*args` bulk converter works for multiple values | /10 |
 | `main()` menu loops correctly and quits cleanly | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

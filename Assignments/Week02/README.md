@@ -59,3 +59,7 @@ A CLI quiz game with at least 10 questions, multiple-choice answers, a live scor
 | Final score, percentage, and letter grade displayed | /10 |
 | Missed questions reviewed at the end via list comprehension | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

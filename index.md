@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Python in 100 Days
+title: Home
 ---
 
 # Python in 100 Days
@@ -8,7 +8,12 @@ title: Python in 100 Days
 A free, structured Python course — from absolute beginner to job-ready in 100 days.
 One lesson, one set of exercises, every day.
 
-[LinkedIn](https://www.linkedin.com/in/nikunjjakhotia/)
+*by [Nikunj Jakhotia](https://www.linkedin.com/in/nikunjjakhotia/) · [LinkedIn](https://www.linkedin.com/in/nikunjjakhotia/) · [GitHub](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)*
+
+[![Star on GitHub](https://img.shields.io/github/stars/nikunjjakhotia/Python-in-100-Days-course-hub?style=social)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)
+[![Forks](https://img.shields.io/github/forks/nikunjjakhotia/Python-in-100-Days-course-hub?style=social)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/fork)
+[![Days](https://img.shields.io/badge/Days-100-brightgreen)](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub)
+[![Language](https://img.shields.io/badge/Language-Python-blue)](https://python.org)
 
 ---
 

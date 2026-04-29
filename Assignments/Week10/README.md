@@ -58,3 +58,7 @@ A working web app you can open in any browser, backed by a real database, with a
 | SQLite persistence across server restarts | /10 |
 | `/api/tasks` JSON endpoint returns correct data + status codes | /10 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

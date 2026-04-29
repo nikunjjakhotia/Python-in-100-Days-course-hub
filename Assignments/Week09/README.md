@@ -58,3 +58,7 @@ A CLI app where tasks survive between runs because they live in a real database 
 | Filtering by status, priority, and due date works | /10 |
 | Bulk add transaction and CSV export work correctly | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

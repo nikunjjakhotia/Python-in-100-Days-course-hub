@@ -58,3 +58,7 @@ A reusable utility package that a developer could drop into any project — with
 | `demo.py` exercises every function with printed output | /10 |
 | Docstrings present on all functions | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

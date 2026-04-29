@@ -58,3 +58,7 @@ A polished CLI tool a user can run as `python Week08_assignment.py --city London
 | Retry logic with exponential back-off implemented | /10 |
 | Caching works — skips API when cache is fresh | /10 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

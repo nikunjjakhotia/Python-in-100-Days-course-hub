@@ -62,3 +62,7 @@ A data analysis script that turns a raw CSV into a polished dashboard PNG — th
 | 4-panel dashboard saved as `dashboard.png` at 150 dpi | /15 |
 | 5-sentence data profile docstring present | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

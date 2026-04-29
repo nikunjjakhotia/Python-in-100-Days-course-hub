@@ -58,3 +58,7 @@ A web app where a user can log income and expenses, view a category breakdown, a
 | 8 unit tests written and passing (including 2 DB tests) | /10 |
 | README.md complete with Quick Start and project structure | /5 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*

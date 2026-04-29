@@ -58,3 +58,7 @@ A Python OOP system modelling a bank with two account types, enforced business r
 | `@classmethod` and `@staticmethod` used appropriately | /10 |
 | Transaction history exported to CSV correctly | /10 |
 | **Total** | **/50** |
+
+---
+
+*If this course is helping you, please ⭐ [star the repo](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub) — it helps others find it!*
