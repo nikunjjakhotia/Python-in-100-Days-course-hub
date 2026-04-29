@@ -14,6 +14,8 @@
 
 A structured, project-driven Python course that takes you from absolute beginner to job-ready in 100 days. Every day ships a lesson, runnable exercises, and at least one project per week.
 
+> **How this repo is organized:** Each day has a `lesson.md` (concept explanation) and `exercises.py` (daily practice problems). Each week has an `Assignments/` folder with one larger project that ties the whole week together.
+
 > **Hosted on LinkedIn** and guided by [Nikunj Jakhotia](https://www.linkedin.com/in/nikunjjakhotia/).
 
 ---
@@ -23,12 +25,8 @@ A structured, project-driven Python course that takes you from absolute beginner
 - New lessons posted every **Monday, Wednesday, and Friday**
 - Each day has a `lesson.md` (concepts + code examples) and `exercises.py` (runnable solutions)
 - Complete at your own pace — all content lives here permanently
-- Register to track progress and earn a certificate
 
-| | |
-|---|---|
-| 📋 Register | [forms.gle/7WsiAnV7CX6vTk1KA](https://forms.gle/7WsiAnV7CX6vTk1KA) |
-| 💼 LinkedIn | [linkedin.com/in/nikunjjakhotia](https://www.linkedin.com/in/nikunjjakhotia/) |
+💼 LinkedIn: [linkedin.com/in/nikunjjakhotia](https://www.linkedin.com/in/nikunjjakhotia/)
 
 ---
 
@@ -259,17 +257,6 @@ pip install -r Week08/requirements.txt   # example for Week 8
 # Read Week01/Day01/lesson.md, then run:
 python Week01/Day01/exercises.py
 ```
-
----
-
-## Certification
-
-Participants who:
-- Register using the [official form](https://forms.gle/7WsiAnV7CX6vTk1KA)
-- Complete at least **70 out of 100 days**
-- Attempt weekly assignments
-
-…are eligible for a **Course Completion Certificate** signed by the instructor.
 
 ---
 

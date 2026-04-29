@@ -4,57 +4,15 @@
 ---
 <!-- assignments-nav -->
 
-# Week 12 Assignments — Pandas & Data Visualisation
+# Week 12 Assignment: Build a Sales Analysis Dashboard
 
-**Days 78–84 · Topics: Series, DataFrame, Exploration, Filtering, GroupBy, Cleaning, Matplotlib, Seaborn**
+**Days 78–84 · Topics: pandas Series & DataFrame, Exploration, Filtering, GroupBy, Data Cleaning, Matplotlib, Seaborn**
 
----
+Using the pandas and visualisation skills from Days 78–84, load a CSV dataset of your choice, clean it, analyse it, and produce a publication-ready dashboard image.
 
-## Assignments
-
-### Day 78 — Intro to pandas
-- Create a DataFrame of 10 countries with population, GDP, and continent
-- Print `shape`, `dtypes`, `describe()`, and `info()`
-- Access 3 rows using `.iloc` and a specific country using `.loc`
-
-### Day 79 — Loading & Exploring
-- Load a CSV of your choice (Kaggle has thousands of free datasets)
-- Print head, tail, value_counts for at least 2 columns, and nunique for each column
-- Write a 5-sentence "data profile" describing what you found
-
-### Day 80 — Filtering & Sorting
-- Filter the dataset to rows matching at least 2 conditions
-- Add a computed column using `.apply(lambda …)`
-- Sort by 2 columns and display the top 10 rows
-
-### Day 81 — GroupBy & Merging
-- Produce a `groupby` summary with at least 3 aggregation functions
-- Create a pivot table
-- Merge two DataFrames on a shared key and verify the row count
-
-### Day 82 — Data Cleaning
-- Find and report null counts per column
-- Fill or drop nulls with a justification comment
-- Fix at least one dtype; normalise at least one string column
-
-### Day 83 — Visualisation
-- Create a bar chart, line chart, and histogram from your dataset
-- Create one Seaborn plot (boxplot, violin, or scatterplot with hue)
-- Save all charts as PNG files with descriptive names
-
-### Day 84 — Project: Dashboard
-- Build a 4-panel dashboard using `plt.subplots`
-- Include: bar, line, pie (or horizontal bar), and a heatmap
-- Save the final dashboard as `dashboard.png` at 150 dpi
-
----
-
-## Grading Criteria
-
-| Criteria | Points |
-|----------|--------|
-| Data exploration thorough | 25 |
-| Correct use of groupby/merge | 25 |
-| Data cleaning justified | 25 |
-| Charts labelled and saved | 25 |
-| **Total** | **100** |
+## What to Build
+- Load a CSV with at least 200 rows and print `shape`, `dtypes`, `describe()`, and null counts per column
+- Clean the data: drop or fill nulls with a justification comment, fix dtypes, normalise at least one string column
+- A GroupBy summary aggregated by at least two dimensions (e.g. region + product category), exported to `summary.csv`
+- A 4-panel matplotlib figure using `plt.subplots(2, 2)`: bar chart, line chart, histogram, and a Seaborn heatmap — saved as `dashboard.png` at 150 dpi
+- A 5-sentence data profile written as a docstring at the top of your script describing what you found

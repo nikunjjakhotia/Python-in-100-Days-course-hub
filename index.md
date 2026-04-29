@@ -234,10 +234,9 @@ Resume · GitHub · Open Source · Interview Prep · Deployment
 
 ---
 
-## Certification
+## Keep Going 🚀
 
-Complete 70+ days and submit weekly assignments to earn a signed certificate.
-[Register here](https://forms.gle/7WsiAnV7CX6vTk1KA)
+Complete all 100 days and share your journey — tag [@nikunjjakhotia](https://www.linkedin.com/in/nikunjjakhotia/) on LinkedIn!
 
 ---
 
