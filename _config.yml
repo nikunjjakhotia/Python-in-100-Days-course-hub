@@ -14,5 +14,8 @@ exclude:
   - "Week*/*/exercises.py"
 header_pages:
   - index.md
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 kramdown:
   input: GFM
