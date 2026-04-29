@@ -1,5 +1,5 @@
 <!-- nav -->
-[← Day 03](../Day03/lesson.md) | [🏠 Home](../../) | [Day 05 →](../Day05/lesson.md)
+[← Day 03](../Day03/lesson) | [🏠 Home](/Python-in-100-Days-course-hub/) | [Day 05 →](../Day05/lesson)
 
 ---
 <!-- nav -->
@@ -62,18 +62,6 @@ print(colors)
 
 ---
 
-## ✅ Practice it Yourself
-
-📚 Assignment
-
-🧠 [Exercise](./exercise.md)
-
-➡️ [Next: Course Contents](../CourseContents.md)
-
-⬅️ [Back: Home](../index.md)
-
----
-
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day04/exercises.py) | [← Day 03](../Day03/lesson.md) | [Day 05 →](../Day05/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day04/exercises.py) | [← Day 03](../Day03/lesson) | [Day 05 →](../Day05/lesson)
 <!-- nav -->

@@ -79,6 +79,14 @@ See `exercises.py`
 
 ---
 
+## 📝 Week 12 Assignment
+
+You've completed Week 12! Time to put it all together.
+
+**[→ Complete the Week 12 Assignment](../../Assignments/Week12/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week12/Day84/exercises.py) | [← Day 83](../Day83/lesson.md) | [Day 85 →](../../Week13/Day85/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week12/Day84/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 83](../Day83/lesson.md) | [Day 85 →](../../Week13/Day85/lesson.md)
 <!-- nav -->

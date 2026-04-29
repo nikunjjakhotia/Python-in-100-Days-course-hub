@@ -83,6 +83,14 @@ See `exercises.py`
 
 ---
 
+## 📝 Week 11 Assignment
+
+You've completed Week 11! Time to put it all together.
+
+**[→ Complete the Week 11 Assignment](../../Assignments/Week11/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week11/Day77/exercises.py) | [← Day 76](../Day76/lesson.md) | [Day 78 →](../../Week12/Day78/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week11/Day77/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 76](../Day76/lesson.md) | [Day 78 →](../../Week12/Day78/lesson.md)
 <!-- nav -->

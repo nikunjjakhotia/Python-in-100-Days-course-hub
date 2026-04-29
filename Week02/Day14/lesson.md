@@ -69,6 +69,14 @@ See `exercises.py` for the full project.
 
 ---
 
+## 📝 Week 2 Assignment
+
+You've completed Week 2! Time to put it all together.
+
+**[→ Complete the Week 2 Assignment](../../Assignments/Week02/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week02/Day14/exercises.py) | [← Day 13](../Day13/lesson.md) | [Day 15 →](../../Week03/Day15/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week02/Day14/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 13](../Day13/lesson.md) | [Day 15 →](../../Week03/Day15/lesson.md)
 <!-- nav -->

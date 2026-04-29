@@ -92,6 +92,14 @@ See `exercises.py`
 
 ---
 
+## 📝 Week 9 Assignment
+
+You've completed Week 9! Time to put it all together.
+
+**[→ Complete the Week 9 Assignment](../../Assignments/Week09/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week09/Day63/exercises.py) | [← Day 62](../Day62/lesson.md) | [Day 64 →](../../Week10/Day64/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week09/Day63/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 62](../Day62/lesson.md) | [Day 64 →](../../Week10/Day64/lesson.md)
 <!-- nav -->

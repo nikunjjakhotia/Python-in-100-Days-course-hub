@@ -98,5 +98,5 @@ See `exercises.py`
 ---
 
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week14/Day95/exercises.py) | [← Day 94](../Day94/lesson.md) | [Day 96 →](../Day96/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week14/Day95/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 94](../Day94/lesson.md) | [Day 96 →](../Day96/lesson.md)
 <!-- nav -->

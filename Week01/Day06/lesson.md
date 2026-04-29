@@ -1,5 +1,5 @@
 <!-- nav -->
-[← Day 05](../Day05/lesson.md) | [🏠 Home](../../) | [Day 07 →](../Day07/lesson.md)
+[← Day 05](../Day05/lesson) | [🏠 Home](/Python-in-100-Days-course-hub/) | [Day 07 →](../Day07/lesson)
 
 ---
 <!-- nav -->
@@ -57,18 +57,6 @@ print(f"Price: ${price:.2f}")  # Rounds to 2 decimal places
 
 ---
 
-## ✅ Practice it Yourself
-
-📚 Assignment
-
-🧠 [Exercise](./exercise.md)
-
-➡️ [Next: Course Contents](../CourseContents.md)
-
-⬅️ [Back: Home](../index.md)
-
----
-
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day06/exercises.py) | [← Day 05](../Day05/lesson.md) | [Day 07 →](../Day07/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day06/exercises.py) | [← Day 05](../Day05/lesson) | [Day 07 →](../Day07/lesson)
 <!-- nav -->

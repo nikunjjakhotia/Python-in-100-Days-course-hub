@@ -78,6 +78,14 @@ See `exercises.py`
 
 ---
 
+## 📝 Week 7 Assignment
+
+You've completed Week 7! Time to put it all together.
+
+**[→ Complete the Week 7 Assignment](../../Assignments/Week07/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week07/Day49/exercises.py) | [← Day 48](../Day48/lesson.md) | [Day 50 →](../../Week08/Day50/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week07/Day49/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 48](../Day48/lesson.md) | [Day 50 →](../../Week08/Day50/lesson.md)
 <!-- nav -->

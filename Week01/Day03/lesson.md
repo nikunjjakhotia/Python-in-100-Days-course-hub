@@ -1,5 +1,5 @@
 <!-- nav -->
-[← Day 02](../Day02/lesson.md) | [🏠 Home](../../) | [Day 04 →](../Day04/lesson.md)
+[← Day 02](../Day02/lesson) | [🏠 Home](/Python-in-100-Days-course-hub/) | [Day 04 →](../Day04/lesson)
 
 ---
 <!-- nav -->
@@ -78,18 +78,6 @@ print("Sum:", a + b)
 
 ---
 
-## ✅ Practice it Yourself
-
-📚 Assignment
-
-🧠 [Exercise](./exercise.md)
-
-➡️ [Next: Course Contents](../CourseContents.md)
-
-⬅️ [Back: Home](../index.md)
-
----
-
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day03/exercises.py) | [← Day 02](../Day02/lesson.md) | [Day 04 →](../Day04/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day03/exercises.py) | [← Day 02](../Day02/lesson) | [Day 04 →](../Day04/lesson)
 <!-- nav -->

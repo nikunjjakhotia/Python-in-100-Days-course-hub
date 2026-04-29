@@ -1,5 +1,5 @@
 <!-- nav -->
-[← Day 06](../Day06/lesson.md) | [🏠 Home](../../) | [Day 08 →](../../Week02/Day08/lesson.md)
+[← Day 06](../Day06/lesson) | [🏠 Home](/Python-in-100-Days-course-hub/) | [Day 08 →](../../Week02/Day08/lesson)
 
 ---
 <!-- nav -->
@@ -65,6 +65,14 @@ See `exercises.py` for the full project code.
 
 ---
 
+## 📝 Week 1 Assignment
+
+You've completed Week 1! Time to put it all together.
+
+**[→ Complete the Week 1 Assignment](../../Assignments/Week01/)**
+
+---
+
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day07/exercises.py) | [← Day 06](../Day06/lesson.md) | [Day 08 →](../../Week02/Day08/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day07/exercises.py) | [← Day 06](../Day06/lesson) | [Day 08 →](../../Week02/Day08/lesson)
 <!-- nav -->

@@ -127,5 +127,5 @@ See `exercises.py`
 ---
 
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week10/Day66/exercises.py) | [← Day 65](../Day65/lesson.md) | [Day 67 →](../Day67/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week10/Day66/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 65](../Day65/lesson.md) | [Day 67 →](../Day67/lesson.md)
 <!-- nav -->

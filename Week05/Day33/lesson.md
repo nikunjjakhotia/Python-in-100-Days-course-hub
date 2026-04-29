@@ -79,5 +79,5 @@ See `exercises.py`
 ---
 
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week05/Day33/exercises.py) | [← Day 32](../Day32/lesson.md) | [Day 34 →](../Day34/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week05/Day33/exercises.py) | [🏠 Home](/Python-in-100-Days-course-hub/) | [← Day 32](../Day32/lesson.md) | [Day 34 →](../Day34/lesson.md)
 <!-- nav -->

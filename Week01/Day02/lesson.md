@@ -1,5 +1,5 @@
 <!-- nav -->
-[← Day 01](../Day01/lesson.md) | [🏠 Home](../../) | [Day 03 →](../Day03/lesson.md)
+[← Day 01](../Day01/lesson) | [🏠 Home](/Python-in-100-Days-course-hub/) | [Day 03 →](../Day03/lesson)
 
 ---
 <!-- nav -->
@@ -79,21 +79,6 @@ print(type(42))        # <class 'int'>
 
 ---
 
-## ✅ Practice it Yourself
-
-📚 Assignment
-
-🧠 [Exercise](./exercise.md)
-
-
-
-
-➡️ [Next: Course Contents](../CourseContents.md)
-
-⬅️ [Back: Home](../index.md)
-
----
-
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day02/exercises.py) | [← Day 01](../Day01/lesson.md) | [Day 03 →](../Day03/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day02/exercises.py) | [← Day 01](../Day01/lesson) | [Day 03 →](../Day03/lesson)
 <!-- nav -->

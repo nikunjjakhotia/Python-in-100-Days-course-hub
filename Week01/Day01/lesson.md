@@ -1,5 +1,5 @@
 <!-- nav -->
-[🏠 Home](../../) | [Day 02 →](../Day02/lesson.md)
+[🏠 Home](/Python-in-100-Days-course-hub/) | [Day 02 →](../Day02/lesson)
 
 ---
 <!-- nav -->
@@ -77,9 +77,6 @@ python hello.py
 - Installing Python
 - Writing and running your first Python script
 
-📚 Assignment
-
-🧠 [Exercise](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py)
 
 ✅ What’s Next?
 In Day 2, we’ll cover:
@@ -105,14 +102,7 @@ Explore the interface — you'll get comfortable quickly.
 
 
 ---
-🧠 [Exercise](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py)
-
-➡️ [Next: Course Contents](/Python-in-100-Days-course-hub/CourseContents)
-
-⬅️ [Back: Home](/Python-in-100-Days-course-hub/)
-
----
 
 <!-- nav -->
-[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py) | [Day 02 →](../Day02/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py) | [Day 02 →](../Day02/lesson)
 <!-- nav -->
