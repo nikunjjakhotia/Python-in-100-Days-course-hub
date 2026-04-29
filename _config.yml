@@ -1,6 +1,11 @@
 theme: minima
 title: Python in 100 Days
 description: A complete Python course by Nikunj Jakhotia
+author: Nikunj Jakhotia
+email: nikunjjakhotia@gmail.com
+header_pages:
+  - index.md
+  - CourseContents.md
 exclude:
   - "*.py"
   - ".claude"
