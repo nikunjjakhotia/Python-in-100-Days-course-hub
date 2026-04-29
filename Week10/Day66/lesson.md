@@ -44,16 +44,19 @@ def index():
     return render_template("index.html", title="Home", name="Alice")
 ```
 
+{% raw %}
 ```html
 <!-- templates/index.html -->
 <h1>{{ title }}</h1>
 <p>Welcome, {{ name }}!</p>
 ```
+{% endraw %}
 
 ---
 
 ## Jinja2 Syntax
 
+{% raw %}
 ```html
 <!-- Variable -->
 <p>{{ user.name }}</p>
@@ -76,11 +79,13 @@ def index():
 <p>{{ name | upper }}</p>
 <p>{{ price | round(2) }}</p>
 ```
+{% endraw %}
 
 ---
 
 ## Base Layout (Template Inheritance)
 
+{% raw %}
 ```html
 <!-- templates/base.html -->
 <!DOCTYPE html>
@@ -92,7 +97,9 @@ def index():
 </body>
 </html>
 ```
+{% endraw %}
 
+{% raw %}
 ```html
 <!-- templates/index.html -->
 {% extends "base.html" %}
@@ -101,13 +108,16 @@ def index():
   <h1>Welcome!</h1>
 {% endblock %}
 ```
+{% endraw %}
 
 ---
 
 ## Key Takeaways
+{% raw %}
 - Templates live in the `templates/` folder — Flask finds them automatically
 - `{{ }}` outputs variables; `{% %}` runs logic
 - `{% extends %}` and `{% block %}` enable reusable layouts
+{% endraw %}
 
 ---
 

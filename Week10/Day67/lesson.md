@@ -75,11 +75,13 @@ app.secret_key = "change-this-in-production"
 flash("Message sent successfully!", "success")
 ```
 
+{% raw %}
 ```html
 {% for category, msg in get_flashed_messages(with_categories=True) %}
   <div class="alert {{ category }}">{{ msg }}</div>
 {% endfor %}
 ```
+{% endraw %}
 
 ---
 

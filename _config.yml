@@ -4,3 +4,5 @@ description: A complete Python course by Nikunj Jakhotia
 exclude:
   - "*.py"
   - ".claude"
+kramdown:
+  input: GFM
