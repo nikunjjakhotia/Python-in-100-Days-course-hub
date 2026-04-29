@@ -4,8 +4,6 @@ description: "by Nikunj Jakhotia · Free Python course from beginner to job-read
 author:
   name: Nikunj Jakhotia
   email: 215087107+nikunjjakhotia@users.noreply.github.com
-header_pages:
-  - index.md
 exclude:
   - "*.py"
   - ".claude"
