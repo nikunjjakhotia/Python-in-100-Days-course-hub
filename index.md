@@ -8,14 +8,14 @@ title: Python in 100 Days
 A free, structured Python course — from absolute beginner to job-ready in 100 days.
 One lesson, one set of exercises, every day.
 
-[Register for the course](https://forms.gle/7WsiAnV7CX6vTk1KA) · [LinkedIn](https://www.linkedin.com/in/nikunjjakhotia/)
+[LinkedIn](https://www.linkedin.com/in/nikunjjakhotia/)
 
 ---
 
 ## Get Started
 
-1. [Set up your environment — Day 1](/Python-in-100-Days-course-hub/Week01/Day01/lesson)
-2. [Install PyCharm (setup guide)](/Python-in-100-Days-course-hub/Week01/Day01/Pycharm/pycharm)
+1. [Set up your environment — Day 1](Week01/Day01/lesson)
+2. [Install PyCharm (setup guide)](Week01/Day01/Pycharm/pycharm)
 3. [Browse the full curriculum](#curriculum)
 
 ---
@@ -27,13 +27,13 @@ Variables · Data Types · Strings · Lists · Dicts · Sets · Type Conversion
 
 | Day | Topic |
 |-----|-------|
-| [Day 01](Week01/Day01/lesson.md) | Introduction to Python & Setup |
-| [Day 02](Week01/Day02/lesson.md) | Variables, Data Types & Input |
-| [Day 03](Week01/Day03/lesson.md) | Strings & String Methods |
-| [Day 04](Week01/Day04/lesson.md) | Lists & Tuples |
-| [Day 05](Week01/Day05/lesson.md) | Dictionaries & Sets |
-| [Day 06](Week01/Day06/lesson.md) | Type Conversion & Input Validation |
-| [Day 07](Week01/Day07/lesson.md) | Project: Contact Book |
+| [Day 01](Week01/Day01/lesson.md) | Introduction to Python |
+| [Day 02](Week01/Day02/lesson.md) | Comments, Variables & Data Types |
+| [Day 03](Week01/Day03/lesson.md) | Numbers, Strings & Input |
+| [Day 04](Week01/Day04/lesson.md) | Lists & Indexing |
+| [Day 05](Week01/Day05/lesson.md) | Tuples, Sets, and Dictionaries |
+| [Day 06](Week01/Day06/lesson.md) | Type Casting & String Formatting |
+| [Day 07](Week01/Day07/lesson.md) | Project: My Bio App |
 
 ---
 
@@ -42,13 +42,13 @@ if/elif/else · while · for · break/continue · List Comprehensions
 
 | Day | Topic |
 |-----|-------|
-| [Day 08](Week02/Day08/lesson.md) | if / elif / else |
-| [Day 09](Week02/Day09/lesson.md) | Comparison & Logical Operators |
-| [Day 10](Week02/Day10/lesson.md) | while Loops |
-| [Day 11](Week02/Day11/lesson.md) | for Loops & range() |
-| [Day 12](Week02/Day12/lesson.md) | break, continue & Loop Patterns |
-| [Day 13](Week02/Day13/lesson.md) | List Comprehensions |
-| [Day 14](Week02/Day14/lesson.md) | Project: Number Guessing Game |
+| [Day 08](Week02/Day08/lesson.md) | Conditional Statements: if / elif / else |
+| [Day 09](Week02/Day09/lesson.md) | Nested Conditions |
+| [Day 10](Week02/Day10/lesson.md) | While Loops |
+| [Day 11](Week02/Day11/lesson.md) | For Loops |
+| [Day 12](Week02/Day12/lesson.md) | range() & Loop Control |
+| [Day 13](Week02/Day13/lesson.md) | Mini Challenges: Control Flow Practice |
+| [Day 14](Week02/Day14/lesson.md) | Project: Quiz Game |
 
 ---
 
@@ -57,13 +57,13 @@ Parameters · *args/**kwargs · Scope · Lambda · Recursion
 
 | Day | Topic |
 |-----|-------|
-| [Day 15](Week03/Day15/lesson.md) | Defining & Calling Functions |
-| [Day 16](Week03/Day16/lesson.md) | Parameters, Arguments & Defaults |
-| [Day 17](Week03/Day17/lesson.md) | *args & **kwargs |
-| [Day 18](Week03/Day18/lesson.md) | Scope & Variable Lifetime |
-| [Day 19](Week03/Day19/lesson.md) | Lambda & Higher-Order Functions |
-| [Day 20](Week03/Day20/lesson.md) | Recursion |
-| [Day 21](Week03/Day21/lesson.md) | Project: Calculator & Unit Converter |
+| [Day 15](Week03/Day15/lesson.md) | Defining Functions |
+| [Day 16](Week03/Day16/lesson.md) | Arguments & Return Values |
+| [Day 17](Week03/Day17/lesson.md) | Scope: Local, Global & Enclosing |
+| [Day 18](Week03/Day18/lesson.md) | Recursion |
+| [Day 19](Week03/Day19/lesson.md) | Lambda Functions |
+| [Day 20](Week03/Day20/lesson.md) | Functions: Practice Problems |
+| [Day 21](Week03/Day21/lesson.md) | Project: Calculator App |
 
 ---
 
@@ -74,11 +74,11 @@ try/except · Custom Exceptions · Text · CSV · JSON · Context Managers
 |-----|-------|
 | [Day 22](Week04/Day22/lesson.md) | try / except / finally |
 | [Day 23](Week04/Day23/lesson.md) | Custom Exceptions |
-| [Day 24](Week04/Day24/lesson.md) | Reading & Writing Text Files |
-| [Day 25](Week04/Day25/lesson.md) | CSV Files |
-| [Day 26](Week04/Day26/lesson.md) | JSON Files |
-| [Day 27](Week04/Day27/lesson.md) | Context Managers & with |
-| [Day 28](Week04/Day28/lesson.md) | Project: Student Grade Manager |
+| [Day 24](Week04/Day24/lesson.md) | Reading Files |
+| [Day 25](Week04/Day25/lesson.md) | Writing Files |
+| [Day 26](Week04/Day26/lesson.md) | os & pathlib |
+| [Day 27](Week04/Day27/lesson.md) | File I/O Challenges |
+| [Day 28](Week04/Day28/lesson.md) | Project: Log Analyzer |
 
 ---
 
@@ -87,13 +87,13 @@ Stacks · Queues · Linked Lists · Generators · Decorators
 
 | Day | Topic |
 |-----|-------|
-| [Day 29](Week05/Day29/lesson.md) | Stacks & Queues |
-| [Day 30](Week05/Day30/lesson.md) | Linked Lists |
-| [Day 31](Week05/Day31/lesson.md) | Sorting & Searching Algorithms |
+| [Day 29](Week05/Day29/lesson.md) | List Comprehensions |
+| [Day 30](Week05/Day30/lesson.md) | Advanced Dictionaries |
+| [Day 31](Week05/Day31/lesson.md) | Sets & Operations |
 | [Day 32](Week05/Day32/lesson.md) | Nested Data Structures |
-| [Day 33](Week05/Day33/lesson.md) | Generators & Iterators |
-| [Day 34](Week05/Day34/lesson.md) | Decorators |
-| [Day 35](Week05/Day35/lesson.md) | Project: Library Catalogue |
+| [Day 33](Week05/Day33/lesson.md) | Sorting & Filtering |
+| [Day 34](Week05/Day34/lesson.md) | Real-World Use Cases for Data Structures |
+| [Day 35](Week05/Day35/lesson.md) | Project: Student Report Generator |
 
 ---
 
@@ -103,11 +103,11 @@ Classes · Inheritance · Encapsulation · Magic Methods · Class Methods
 | Day | Topic |
 |-----|-------|
 | [Day 36](Week06/Day36/lesson.md) | Classes & Objects |
-| [Day 37](Week06/Day37/lesson.md) | Constructors & Instance Methods |
-| [Day 38](Week06/Day38/lesson.md) | Inheritance |
-| [Day 39](Week06/Day39/lesson.md) | Encapsulation & Properties |
-| [Day 40](Week06/Day40/lesson.md) | Magic Methods & Operator Overloading |
-| [Day 41](Week06/Day41/lesson.md) | Class & Static Methods |
+| [Day 37](Week06/Day37/lesson.md) | Instance vs Class Variables |
+| [Day 38](Week06/Day38/lesson.md) | Constructors & Magic Methods |
+| [Day 39](Week06/Day39/lesson.md) | Inheritance |
+| [Day 40](Week06/Day40/lesson.md) | Polymorphism & Encapsulation |
+| [Day 41](Week06/Day41/lesson.md) | OOP Challenges |
 | [Day 42](Week06/Day42/lesson.md) | Project: Bank Account System |
 
 ---
@@ -123,7 +123,7 @@ Import · Standard Library · Custom Modules · Packages · venv · pip
 | [Day 46](Week07/Day46/lesson.md) | Packages & `__init__.py` |
 | [Day 47](Week07/Day47/lesson.md) | Virtual Environments & pip |
 | [Day 48](Week07/Day48/lesson.md) | Popular Third-Party Libraries |
-| [Day 49](Week07/Day49/lesson.md) | Project: Reusable Utility Library |
+| [Day 49](Week07/Day49/lesson.md) | Project: Build a Reusable Utility Library |
 
 ---
 
@@ -151,7 +151,7 @@ SQL Basics · INSERT/SELECT/UPDATE/DELETE · Transactions · CRUD
 | [Day 58](Week09/Day58/lesson.md) | Creating Tables & Inserting Data |
 | [Day 59](Week09/Day59/lesson.md) | SELECT Queries & Filtering |
 | [Day 60](Week09/Day60/lesson.md) | UPDATE, DELETE & Transactions |
-| [Day 61](Week09/Day61/lesson.md) | Python sqlite3 Deep Dive |
+| [Day 61](Week09/Day61/lesson.md) | Python `sqlite3` Module Deep Dive |
 | [Day 62](Week09/Day62/lesson.md) | Building a CRUD App |
 | [Day 63](Week09/Day63/lesson.md) | Project: To-Do List Database App |
 
@@ -177,12 +177,12 @@ pathlib · shutil · BeautifulSoup · CSV Reports · Email · Scheduling
 
 | Day | Topic |
 |-----|-------|
-| [Day 71](Week11/Day71/lesson.md) | File System Automation |
-| [Day 72](Week11/Day72/lesson.md) | Web Scraping with requests + BeautifulSoup |
+| [Day 71](Week11/Day71/lesson.md) | File System Automation with `pathlib` & `shutil` |
+| [Day 72](Week11/Day72/lesson.md) | Web Scraping with `requests` + `BeautifulSoup` |
 | [Day 73](Week11/Day73/lesson.md) | Parsing & Extracting Structured Data |
 | [Day 74](Week11/Day74/lesson.md) | Automating CSV Reports |
-| [Day 75](Week11/Day75/lesson.md) | Email Automation with smtplib |
-| [Day 76](Week11/Day76/lesson.md) | Task Scheduling with schedule |
+| [Day 75](Week11/Day75/lesson.md) | Email Automation with `smtplib` |
+| [Day 76](Week11/Day76/lesson.md) | Task Scheduling with `schedule` |
 | [Day 77](Week11/Day77/lesson.md) | Project: File Organiser Bot |
 
 ---
@@ -211,7 +211,7 @@ Architecture · Scaffold · CRUD · Testing · Docs · Polish
 | [Day 86](Week13/Day86/lesson.md) | Project Scaffold & Database Schema |
 | [Day 87](Week13/Day87/lesson.md) | Core Feature Implementation — Part 1 |
 | [Day 88](Week13/Day88/lesson.md) | Core Feature Implementation — Part 2 |
-| [Day 89](Week13/Day89/lesson.md) | Testing with unittest |
+| [Day 89](Week13/Day89/lesson.md) | Testing with `unittest` |
 | [Day 90](Week13/Day90/lesson.md) | Documentation & README |
 | [Day 91](Week13/Day91/lesson.md) | Final Polish & Code Review |
 
@@ -231,6 +231,29 @@ Resume · GitHub · Open Source · Interview Prep · Deployment
 | [Day 98](Week14/Day98/lesson.md) | Interview Prep: OOP & Design Patterns |
 | [Day 99](Week14/Day99/lesson.md) | Deploying Python Projects |
 | [Day 100](Week14/Day100/lesson.md) | Course Wrap-Up & What's Next |
+
+---
+
+## 📝 Weekly Assignments
+
+Each week has a project-based assignment to consolidate your learning.
+
+| Week | Assignment |
+|------|------------|
+| [Week 1](Assignments/Week01/) | Personal Bio App |
+| [Week 2](Assignments/Week02/) | Text-Based Adventure Game |
+| [Week 3](Assignments/Week03/) | Multi-Function CLI Toolkit |
+| [Week 4](Assignments/Week04/) | Student Grade Manager |
+| [Week 5](Assignments/Week05/) | Task Queue Manager |
+| [Week 6](Assignments/Week06/) | OOP Inventory System |
+| [Week 7](Assignments/Week07/) | Personal Utility Package |
+| [Week 8](Assignments/Week08/) | Live Data CLI Dashboard |
+| [Week 9](Assignments/Week09/) | Contact Database App |
+| [Week 10](Assignments/Week10/) | Flask Task Manager |
+| [Week 11](Assignments/Week11/) | File Organiser Bot |
+| [Week 12](Assignments/Week12/) | Sales Analysis Dashboard |
+| [Week 13](Assignments/Week13/) | Capstone Project |
+| [Week 14](Assignments/Week14/) | Polish and Present Your Portfolio |
 
 ---
 

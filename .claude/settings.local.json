@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(python add_nav.py)",
+      "Bash(python add_assignments_nav.py)",
+      "Bash(git rm *)",
+      "Bash(python fix_nav.py)"
     ]
   }
 }

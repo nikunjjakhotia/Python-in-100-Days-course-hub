@@ -70,5 +70,5 @@ print(f"Price: ${price:.2f}")  # Rounds to 2 decimal places
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 05](../Day05/lesson.md) | [Day 07 →](../Day07/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day06/exercises.py) | [← Day 05](../Day05/lesson.md) | [Day 07 →](../Day07/lesson.md)
 <!-- nav -->

@@ -75,5 +75,5 @@ print(colors)
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 03](../Day03/lesson.md) | [Day 05 →](../Day05/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day04/exercises.py) | [← Day 03](../Day03/lesson.md) | [Day 05 →](../Day05/lesson.md)
 <!-- nav -->

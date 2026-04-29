@@ -95,5 +95,5 @@ print(type(42))        # <class 'int'>
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 01](../Day01/lesson.md) | [Day 03 →](../Day03/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day02/exercises.py) | [← Day 01](../Day01/lesson.md) | [Day 03 →](../Day03/lesson.md)
 <!-- nav -->

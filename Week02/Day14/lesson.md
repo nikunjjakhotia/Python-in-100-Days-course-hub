@@ -70,5 +70,5 @@ See `exercises.py` for the full project.
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 13](../Day13/lesson.md) | [Day 15 →](../../Week03/Day15/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week02/Day14/exercises.py) | [← Day 13](../Day13/lesson.md) | [Day 15 →](../../Week03/Day15/lesson.md)
 <!-- nav -->

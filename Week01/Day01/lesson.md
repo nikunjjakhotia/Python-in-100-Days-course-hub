@@ -50,7 +50,7 @@ Python is a powerful, high-level programming language known for its:
    You should see something like:
    Python 3.x.x
 
-   ![Python Version](../assets/pyversion.png)
+   ![Python Version](/Python-in-100-Days-course-hub/assets/pyversion.png)
       
 ✏️ Your First Python Program
 Let’s write the legendary “Hello, World!” program.
@@ -67,7 +67,7 @@ Open CMD -> Make sure you navigate to the path where your file has been saved.
 
 python hello.py
 
-![CMD Output](../assets/cmdprompt.png)
+![CMD Output](/Python-in-100-Days-course-hub/assets/cmdprompt.png)
 
 🎉 You just ran your first Python program!
 
@@ -79,7 +79,7 @@ python hello.py
 
 📚 Assignment
 
-🧠 [Exercise](./exercise.md)
+🧠 [Exercise](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py)
 
 ✅ What’s Next?
 In Day 2, we’ll cover:
@@ -105,14 +105,14 @@ Explore the interface — you'll get comfortable quickly.
 
 
 ---
-🧠 [Exercise](./exercise.md)
+🧠 [Exercise](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py)
 
-➡️ [Next: Course Contents](../CourseContents.md)
+➡️ [Next: Course Contents](/Python-in-100-Days-course-hub/CourseContents)
 
-⬅️ [Back: Home](../index.md)
+⬅️ [Back: Home](/Python-in-100-Days-course-hub/)
 
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [Day 02 →](../Day02/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day01/exercises.py) | [Day 02 →](../Day02/lesson.md)
 <!-- nav -->

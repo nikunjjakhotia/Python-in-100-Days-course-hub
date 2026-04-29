@@ -91,5 +91,5 @@ print("Sum:", a + b)
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 02](../Day02/lesson.md) | [Day 04 →](../Day04/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day03/exercises.py) | [← Day 02](../Day02/lesson.md) | [Day 04 →](../Day04/lesson.md)
 <!-- nav -->

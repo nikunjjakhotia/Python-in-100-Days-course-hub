@@ -86,5 +86,5 @@ See `exercises.py`
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 38](../Day38/lesson.md) | [Day 40 →](../Day40/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week06/Day39/exercises.py) | [← Day 38](../Day38/lesson.md) | [Day 40 →](../Day40/lesson.md)
 <!-- nav -->

@@ -76,5 +76,5 @@ print(person.get("age"))        # Get value safely
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 04](../Day04/lesson.md) | [Day 06 →](../Day06/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week01/Day05/exercises.py) | [← Day 04](../Day04/lesson.md) | [Day 06 →](../Day06/lesson.md)
 <!-- nav -->

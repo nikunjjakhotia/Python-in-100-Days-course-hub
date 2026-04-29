@@ -91,5 +91,5 @@ See `exercises.py`
 ---
 
 <!-- nav -->
-[📝 Exercises](exercises.py) | [← Day 64](../Day64/lesson.md) | [Day 66 →](../Day66/lesson.md)
+[📝 Exercises](https://github.com/nikunjjakhotia/Python-in-100-Days-course-hub/blob/main/Week10/Day65/exercises.py) | [← Day 64](../Day64/lesson.md) | [Day 66 →](../Day66/lesson.md)
 <!-- nav -->
