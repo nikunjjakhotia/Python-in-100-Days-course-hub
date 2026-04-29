@@ -1,24 +1,17 @@
-theme: minima
 title: Python in 100 Days
 description: "by Nikunj Jakhotia · Free Python course from beginner to job-ready"
 author:
   name: Nikunj Jakhotia
   email: 215087107+nikunjjakhotia@users.noreply.github.com
-defaults:
-  - scope:
-      path: "Week*"
-    values:
-      published: false
-  - scope:
-      path: "Assignments"
-    values:
-      published: false
-  - scope:
-      path: "Week*/*/lesson.md"
-    values:
-      sitemap: false
+theme: minima
 exclude:
   - "*.py"
   - ".claude"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "add_nav.py"
+  - "Week*/*/exercises.py"
+header_pages:
+  - index.md
 kramdown:
   input: GFM
